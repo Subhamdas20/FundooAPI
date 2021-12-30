@@ -9,9 +9,6 @@ const userSchema = new mongoose.Schema({
     lastname: {
         type: String,
     },
-    username: {
-        type: String,
-    },
     email: {
         type: String,
     },
@@ -43,7 +40,7 @@ class UserModel {
                     }
 
                     else {
-                        resolve({
+                        reject({
                             message: "user not found please register first",
                             data: null,
                             status: 400
@@ -57,6 +54,39 @@ class UserModel {
                 });
         });
     }
+    // loginUser(req) {
+    //     var response = {
+    //         message: "",
+    //         data: "",
+    //         success: "",
+    //         status: 200
+    //     };
+    //     return new Promise((resolve, reject) => {
+    //         User.findOne({ email: req.email })
+    //             .then((data) => {
+    //                 if (data) {
+    //                     (response.success = true),
+    //                         (response.data = data),
+    //                         (response.status = 422),
+    //                         (response.message = "Login successful");
+    //                     resolve(response);
+    //                 }
+
+    //                 else {
+    //                     resolve({
+    //                         message: "user not found please register first",
+    //                         data: data,
+    //                         status: 400
+    //                     });
+    //                 }
+    //             })
+    //             .catch((err) => {
+    //                 reject(
+    //                     { success: false, error: err }
+    //                 );
+    //             });
+    //     });
+    // }
 
     registerModel(obj) {
         let response = {
