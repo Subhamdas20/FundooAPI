@@ -8,7 +8,6 @@ class UserService {
     async registerService(reqObj, res) {
 
         let foundUser = await userModel.findUser(reqObj);
-
         if (!foundUser.data) {
             const passwordHash = await bcrypt.hash(reqObj.password, 10)
             let newUser = new newModel({

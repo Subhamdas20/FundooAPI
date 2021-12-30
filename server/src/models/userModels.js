@@ -5,30 +5,18 @@ const mongoose = require('mongoose')
 const userSchema = new mongoose.Schema({
     firstname: {
         type: String,
-        required: true,
     },
     lastname: {
         type: String,
-        required: true,
     },
     username: {
         type: String,
-        required: true,
-        unique: true
     },
     email: {
         type: String,
-        required: true,
-        unique: true,
-        // validate(value) {
-        //     if (!validator.isEmail(value)) {
-        //         throw new Error("Invalid mail")
-        //     }
-        // }
     },
     password: {
         type: String,
-        required: true
     }
 }, {
     timestamps: true,
@@ -46,7 +34,6 @@ class UserModel {
         return new Promise((resolve, reject) => {
             User.findOne({ email: req.email })
                 .then((data) => {
-                    // console.log(data);
                     if (data) {
                         (response.success = true),
                             (response.data = data),
@@ -64,12 +51,9 @@ class UserModel {
                     }
                 })
                 .catch((err) => {
-                    reject({
-                        message: "User not found",
-                        data: "",
-                        success: "",
-                        status: 400
-                    });
+                    reject(
+                        { success: false, error: err }
+                    );
                 });
         });
     }
