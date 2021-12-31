@@ -1,6 +1,4 @@
 const mongoose = require('mongoose')
-// const validator = require('validator')
-
 
 const userSchema = new mongoose.Schema({
     firstname: {
@@ -28,19 +26,20 @@ class UserModel {
             success: "",
             status: 200
         };
+        // console.log(req);
         return new Promise((resolve, reject) => {
             User.findOne({ email: req.email })
                 .then((data) => {
                     if (data) {
+                        
                         (response.success = true),
                             (response.data = data),
                             (response.status = 422),
                             (response.message = "user already exists");
                         resolve(response);
                     }
-
                     else {
-                        reject({
+                        resolve({
                             message: "user not found please register first",
                             data: null,
                             status: 400
@@ -64,18 +63,20 @@ class UserModel {
             status: 200
         };
         return new Promise((resolve, reject) => {
+            // console.log(obj);
             obj.save().then((dataaa) => {
+                console.log(dataaa);
                 (response.sucess = true),
-                    (response.message = "register success"),
-                    (response.data = dataaa);
+                (response.message = "register success"),
+                (response.data = dataaa);
                 (response.status = 200);
                 resolve({ response });
             }).catch((err) => {
                 console.log(err)
                 response.sucess = false,
-                    response.message = "register failed"
+                response.message = "register failed"
                 response.data = "";
-                (response.status = 500);
+                (response.status = 400);
                 reject({ response });
             })
         })

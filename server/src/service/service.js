@@ -1,14 +1,13 @@
-const { response } = require('express');
 const model = require('../models/userModels')
 const userModel = new model.UserModel();
-const newModel = model.note;
+const newModel = model.User;
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
 
-
 class UserService {
     async registerService(reqObj, res) {
-        let foundUser = await userModel.findUser(reqObj);
+        let foundUser = await userModel.findUser(reqObj); 
+        // console.log(foundUser);
         if (!foundUser.data) {
             const passwordHash = await bcrypt.hash(reqObj.password, 10)
             let newUser = new newModel({
@@ -18,6 +17,7 @@ class UserService {
                 password: passwordHash
             })
             let saveData = userModel.registerModel(newUser);
+
             return saveData;
         }
         else return foundUser;

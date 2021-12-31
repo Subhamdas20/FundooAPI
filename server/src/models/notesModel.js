@@ -41,6 +41,39 @@ class NoteModel {
             })
         })
     }
+    findNotes(req) {
+        var response = {
+            message: "",
+            data: "",
+            success: "",
+            status: 200
+        };
+        return new Promise((resolve, reject) => {
+            notes.findOne({ user_ID: req.data.id })
+                .then((data) => {
+                    if (data) {
+                        (response.success = true),
+                            (response.data = data),
+                            (response.status = 422),
+                            (response.message = "Notes found");
+                        resolve(response);
+                    }
+
+                    else {
+                        reject({
+                            message: "Notes not found",
+                            data: null,
+                            status: 400
+                        });
+                    }
+                })
+                .catch((err) => {
+                    reject(
+                        { success: false, error: err }
+                    );
+                });
+        });
+    }
 }
 
 module.exports = { notes, NoteModel }
