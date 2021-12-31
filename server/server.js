@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(validator())
 app.use('/',router)
 
-
+ 
 app.listen(PORT, () => { console.log(`server running at Port ${PORT}`) })
 
 database()

@@ -16,7 +16,6 @@ const addNotes = new mongoose.Schema({
 const notes = mongoose.model('Notes', addNotes);
 
 class NoteModel {
-
     registerModel(obj) {
         let response = {
             sucess: true,
@@ -49,18 +48,51 @@ class NoteModel {
             status: 200
         };
         return new Promise((resolve, reject) => {
-            notes.findOne({ user_ID: req.data.id })
+            notes.find({ user_ID: req.data.id })
                 .then((data) => {
                     if (data) {
                         (response.success = true),
                             (response.data = data),
-                            (response.status = 422),
+                            (response.status = 202),
+                            (response.message = "Notes found");
+                        resolve(response);
+                    }
+                    else {
+                        resolve({
+                            message: "Notes not found",
+                            data: null,
+                            status: 400
+                        });
+                    }
+                })
+                .catch((err) => {
+                    reject(
+                        { success: false, error: err }
+                    );
+                });
+        });
+    }
+    searchNotes(req) {
+        var response = {
+            message: "",
+            data: "",
+            success: "",
+            status: 200
+        };
+        return new Promise((resolve, reject) => {
+            notes.findOne({ _id: req._id })
+                .then((data) => {
+                    if (data) {
+
+                        (response.success = true),
+                            (response.data = data),
+                            (response.status = 202),
                             (response.message = "Notes found");
                         resolve(response);
                     }
 
                     else {
-                        reject({
+                        resolve({
                             message: "Notes not found",
                             data: null,
                             status: 400

@@ -34,7 +34,7 @@ class UserModel {
                         
                         (response.success = true),
                             (response.data = data),
-                            (response.status = 422),
+                            (response.status = 202),
                             (response.message = "user already exists");
                         resolve(response);
                     }
