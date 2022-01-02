@@ -3,21 +3,21 @@ const userModel = new model.UserModel();
 const newModel = model.User;
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
-
+const nodemailer = require('nodemailer')
+require('dotenv').config();
 class UserService {
-    async registerService(reqObj, res) {
-        let foundUser = await userModel.findUser(reqObj); 
+    async registerService(req, res) {
+        let foundUser = await userModel.findUser(req);
         // console.log(foundUser);
         if (!foundUser.data) {
-            const passwordHash = await bcrypt.hash(reqObj.password, 10)
+            const passwordHash = await bcrypt.hash(req.password, 10)
             let newUser = new newModel({
-                firstname: reqObj.firstname,
-                lastname: reqObj.lastname,
-                email: reqObj.email,
+                firstname: req.firstname,
+                lastname: req.lastname,
+                email: req.email,
                 password: passwordHash
             })
             let saveData = userModel.registerModel(newUser);
-
             return saveData;
         }
         else return foundUser;
@@ -25,11 +25,11 @@ class UserService {
 
     async loginService(req, res) {
         let findUser = await userModel.findUser(req);
-        console.log()
+       
         if (findUser.data) {
             let passwordVerify = await bcrypt.compare(req.password, findUser.data.password)
             if (passwordVerify) {
-                const payload = { id: findUser.data._id, email:findUser.data.email }
+                const payload = { id: findUser.data._id, email: findUser.data.email }
                 const token = jwt.sign(payload, process.env.TOKEN_SECRET, { expiresIn: "1d" })
                 return new Promise((resolve, reject) => {
                     resolve({
@@ -40,7 +40,7 @@ class UserService {
                             lastname: findUser.data.lastname,
                             email: findUser.data.email,
                             createdAt: findUser.data.createdAt,
-                            token:token
+                            token: token
                         },
                         success: "",
                         status: 200
@@ -61,6 +61,39 @@ class UserService {
             }
         }
         else return findUser;
+    }
+    async forgetService(req, res) {
+        let foundUser = await userModel.findUser(req);
+        // console.log(foundUser);
+        if (foundUser.data) {
+            const payload = { id: foundUser.data._id, email: foundUser.data.email }
+            const token = jwt.sign(payload, process.env.TOKEN_SECRET, { expiresIn: "1d" })
+            let mailTransporter = nodemailer.createTransport({
+                service: 'gmail',
+                auth: {
+                    user: process.env.EMAIL,
+                    pass: process.env.PASSWORD
+                }
+            });
+            let mailDetails = {
+                from: process.env.EMAIL,
+                to: req.email,
+                subject: 'Forgot password',
+                text: `<div>
+                Hi,
+                Here is the link to reset password <a href="">click here</a></div>`
+            };
+              
+            mailTransporter.sendMail(mailDetails, function(err, data) {
+                if(err) {
+                    console.log('Error');
+                    console.log(err);
+                } else {
+                    console.log('Email sent successfully');
+                }
+            });     
+        }
+        else return foundUser;
     }
 }
 

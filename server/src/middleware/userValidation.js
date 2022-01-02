@@ -14,9 +14,7 @@ let registerValidate = (req, res, next) => {
         .isLength({ min: 3 })
         .withMessage("Min 3 alphabet required in LastName");
    
-
     req.check("email").isEmail().withMessage("Email is not valid");
-
 
     req
         .check("password")
@@ -33,9 +31,7 @@ let registerValidate = (req, res, next) => {
     }
 }
 
-
-let loginValidate = (req, res, next) => {
-    
+let loginValidate = (req, res, next) => {   
      req.check("email").isEmail().withMessage("Email is not valid");
     req
         .check("password")

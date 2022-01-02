@@ -31,7 +31,7 @@ class UserModel {
             User.findOne({ email: req.email })
                 .then((data) => {
                     if (data) {
-                        
+
                         (response.success = true),
                             (response.data = data),
                             (response.status = 202),
@@ -53,7 +53,7 @@ class UserModel {
                 });
         });
     }
-  
+
 
     registerModel(obj) {
         let response = {
@@ -67,14 +67,14 @@ class UserModel {
             obj.save().then((dataaa) => {
                 console.log(dataaa);
                 (response.sucess = true),
-                (response.message = "register success"),
-                (response.data = dataaa);
+                    (response.message = "register success"),
+                    (response.data = dataaa);
                 (response.status = 200);
                 resolve({ response });
             }).catch((err) => {
                 console.log(err)
                 response.sucess = false,
-                response.message = "register failed"
+                    response.message = "register failed"
                 response.data = "";
                 (response.status = 400);
                 reject({ response });

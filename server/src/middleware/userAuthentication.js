@@ -9,7 +9,7 @@ const auth = (req, res, next) => {
         }
         else {
             req.body['data'] = decoder;
-            // req.token = decoder;
+          
             next();
         }
     }))

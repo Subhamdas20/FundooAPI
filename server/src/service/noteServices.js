@@ -37,8 +37,6 @@ class NoteService {
 
     async updateNoteService(req, res) {
         let foundNote = await NotesModel.searchNotes(req);
-        // console.log(req);
-        console.log(foundNote);
         if (foundNote) {
             return await notes.updateOne({ _id: foundNote.data._id }, {
                 $set: {
@@ -48,7 +46,6 @@ class NoteService {
                     isArchieved: req.isArchieved,
                     isDeleted: req.isArchieved,
                     color: req.color,
-                   
                 }
             })
         }
