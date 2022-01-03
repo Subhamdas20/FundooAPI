@@ -26,7 +26,7 @@ class UserModel {
             success: "",
             status: 200
         };
-        // console.log(req);
+
         return new Promise((resolve, reject) => {
             User.findOne(req)
                 .then((data) => {
@@ -62,16 +62,14 @@ class UserModel {
             status: 200
         };
         return new Promise((resolve, reject) => {
-            // console.log(obj);
             obj.save().then((dataaa) => {
-                console.log(dataaa);
                 (response.sucess = true),
                     (response.message = "register success"),
                     (response.data = dataaa);
                 (response.status = 200);
                 resolve({ response });
             }).catch((err) => {
-                console.log(err)
+
                 response.sucess = false,
                     response.message = "register failed"
                 response.data = "";

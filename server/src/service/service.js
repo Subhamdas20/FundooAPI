@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer')
 require('dotenv').config();
 class UserService {
     async registerService(req, res) {
-        let foundUser = await userModel.findUser(req);
+        let foundUser = await userModel.findUser({email:req.email});
         if (!foundUser.data) {
             const passwordHash = await bcrypt.hash(req.password, 10)
             let newUser = new newModel({
@@ -62,7 +62,7 @@ class UserService {
         else return findUser;
     }
     async forgetService(req, res) {
-        let foundUser = await userModel.findUser(req);
+        let foundUser = await userModel.findUser({email:req.email});
         if (foundUser.data) {
             const payload = { id: foundUser.data._id, email: foundUser.data.email }
             const token = jwt.sign(payload, process.env.TOKEN_SECRET, { expiresIn: "1d" })
