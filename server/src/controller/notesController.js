@@ -29,5 +29,19 @@ class NotesController {
             return res.status(400).send(err);
         }))
     }
+    async getisArchievedNotes(req, res) {
+        await noteService.getisArchievedService(req.body).then((result) => {
+            res.status(200).json(result)
+        }).catch((err => {
+            return res.status(400).send(err);
+        }))
+    }
+    async getisDeletedNotes(req, res) {
+        await noteService.getisDeletedService(req.body).then((result) => {
+            res.status(200).json(result)
+        }).catch((err => {
+            return res.status(400).send(err);
+        }))
+    }
 }
 module.exports = new NotesController();

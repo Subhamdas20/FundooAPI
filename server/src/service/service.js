@@ -79,7 +79,7 @@ class UserService {
                 from: process.env.EMAIL,
                 to: req.email,
                 subject: 'Forgot password',
-                text: `<div>
+                html: `<div>
                 Hi,
                 Here is the link to reset password <a href="">click here</a></div>`
             };

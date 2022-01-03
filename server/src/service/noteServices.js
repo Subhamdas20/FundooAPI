@@ -18,15 +18,8 @@ class NoteService {
         return saveData;
     }
     async getNoteService(req, res) {
-        let foundNote = await NotesModel.findNotes(req);
+        let foundNote = await NotesModel.findNotes({ user_ID: req.data.id });
         if (foundNote) return foundNote;
-        else return new Promise((resolve, reject) => {
-            reject({
-                statusCode: 400,
-                name: "Error",
-                message: "Notes not found",
-            })
-        });
     }
     async deleteNoteService(req, res) {
         let foundNote = await NotesModel.searchNotes(req);
@@ -37,20 +30,26 @@ class NoteService {
 
     async updateNoteService(req, res) {
         let foundNote = await NotesModel.searchNotes(req);
-        if (foundNote) {
-            return await notes.updateOne({ _id: foundNote.data._id }, {
-                $set: {
-                    title: req.title,
-                    description: req.description,
-                    isPined: req.isPined,
-                    isArchieved: req.isArchieved,
-                    isDeleted: req.isArchieved,
-                    color: req.color,
-                }
-            })
+      
+        if (foundNote.data) {
+            let data = await NotesModel.updateNote(req,foundNote)
+            return data;
         }
+        else return foundNote;
+       
     }
+    async getisArchievedService(req, res) {
+        let foundNote = await NotesModel.findNotes({ user_ID: req.data.id, isArchieved: true });
+        if (foundNote) {
+            return foundNote
+        };
 
-
+    }
+    async getisDeletedService(req, res) {
+        let foundNote = await NotesModel.findisDeletedNotes({ user_ID: req.data.id, isDeleted: true });
+        if (foundNote) {
+            return foundNote
+        };
+    }
 }
 module.exports = new NoteService();

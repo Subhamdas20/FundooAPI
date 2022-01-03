@@ -13,5 +13,7 @@ router.post("/addNote", auth, NotesController.addNotes);
 router.get("/getNote", auth, NotesController.getNotes);
 router.delete("/deleteNote", auth, NotesController.deleteNotes);
 router.put('/updateNote', auth, NotesController.updateNotes)
+router.get("/isArchieved", auth, NotesController.getNotes);
+router.get("/isDeleted", auth, NotesController.getNotes);
 module.exports = router;
 

@@ -48,7 +48,7 @@ class NoteModel {
             status: 200
         };
         return new Promise((resolve, reject) => {
-            notes.find({ user_ID: req.data.id })
+            notes.find(req)
                 .then((data) => {
                     if (data) {
                         (response.success = true),
@@ -98,6 +98,29 @@ class NoteModel {
                             status: 400
                         });
                     }
+                })
+                .catch((err) => {
+                    reject(
+                        { success: false, error: err }
+                    );
+                });
+        });
+    }
+
+    updateNote(req, data) {
+
+        let NoteModel = {
+            title: req.title ? req.title : data.title,
+            description: req.description ? req.description : data.description,
+            isPined: req.isPined ? req.isPined : data.isPined,
+            isArchieved: req.isArchieved ? req.isArchieved : data.isArchieved,
+            isDeleted: req.isDeleted ? req.isDeleted : data.isDeleted,
+            color: req.color ? req.color : data.color,
+        }
+        return new Promise((resolve, reject) => {
+            notes.updateOne({ _id: req._id }, NoteModel)
+                .then((result) => {
+                    resolve(result)
                 })
                 .catch((err) => {
                     reject(
