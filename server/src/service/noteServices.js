@@ -29,7 +29,7 @@ class NoteService {
     }
 
     async updateNoteService(req, res) {
-        let foundNote = await NotesModel.searchNotes(req);
+        let foundNote = await NotesModel.searchNotes(req,res);
       
         if (foundNote.data) {
             let data = await NotesModel.updateNote(req,foundNote)

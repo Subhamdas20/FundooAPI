@@ -8,7 +8,6 @@ require('dotenv').config();
 class UserService {
     async registerService(req, res) {
         let foundUser = await userModel.findUser(req);
-        // console.log(foundUser);
         if (!foundUser.data) {
             const passwordHash = await bcrypt.hash(req.password, 10)
             let newUser = new newModel({
@@ -24,7 +23,7 @@ class UserService {
     }
 
     async loginService(req, res) {
-        let findUser = await userModel.findUser(req);
+        let findUser = await userModel.findUser({email:req.email});
        
         if (findUser.data) {
             let passwordVerify = await bcrypt.compare(req.password, findUser.data.password)
@@ -64,7 +63,6 @@ class UserService {
     }
     async forgetService(req, res) {
         let foundUser = await userModel.findUser(req);
-        // console.log(foundUser);
         if (foundUser.data) {
             const payload = { id: foundUser.data._id, email: foundUser.data.email }
             const token = jwt.sign(payload, process.env.TOKEN_SECRET, { expiresIn: "1d" })
@@ -92,6 +90,15 @@ class UserService {
                     console.log('Email sent successfully');
                 }
             });     
+        }
+        else return foundUser;
+    }
+    async resetService(req, res) {
+        let foundUser = await userModel.findUser({_id:req.data.id});
+        if (foundUser.data) {
+            const passwordHash = await bcrypt.hash(req.password, 10)
+            let updatedData = newModel.updateOne({_id:req.data.id},{password:passwordHash});
+            return updatedData;
         }
         else return foundUser;
     }

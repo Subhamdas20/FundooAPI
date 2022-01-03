@@ -108,7 +108,6 @@ class NoteModel {
     }
 
     updateNote(req, data) {
-
         let NoteModel = {
             title: req.title ? req.title : data.title,
             description: req.description ? req.description : data.description,

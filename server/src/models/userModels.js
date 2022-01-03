@@ -28,10 +28,9 @@ class UserModel {
         };
         // console.log(req);
         return new Promise((resolve, reject) => {
-            User.findOne({ email: req.email })
+            User.findOne(req)
                 .then((data) => {
                     if (data) {
-
                         (response.success = true),
                             (response.data = data),
                             (response.status = 202),
