@@ -1,0 +1,215 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Funddoo Backened",
+      "description": "This documentation guides the user through the APIs availabe in the system.",
+      "version": "1.1.0"
+    },
+    "paths": {
+      "/register": {
+        "post": {
+          "tags": [""],
+          "summary": "Register a user.",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "Register Data",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "required": ["firstName", "lastName", "email", "password"],
+                "properties": {
+                  "firstName": {
+                    "type": "string"
+                  },
+                  "lastName": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ],
+          "description": "Register a user and get registered user `object` back from the server.",
+          "produces": "application/json",
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/login": {
+        "post": {
+          "tags": [""],
+          "summary": "Login a user.",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "Login Data",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "required": [ "email", "password"],
+                "properties": {
+                 
+                  "email": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ],
+          "description": "Login a user and get registered user `object` back from the server.",
+          "produces": "application/json",
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/forgetpassword": {
+        "post": {
+          "tags": [""],
+          "summary": "Login a user.",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "Login Data",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "required": [ "email"],
+                "properties": {
+                  "email": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ],
+          "description": "Reset get registered user `object` back from the server.",
+          "produces": "application/json",
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/resetpassword": {
+        "post": {
+          "tags": [""],
+          "summary": "Login a user.",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "Login Data",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "required": [ "password"],
+                "properties": {
+                 
+                  "password": {
+                    "type": "string"
+                  }
+                  
+                 
+                }
+              }
+            },
+            {
+                "in": "header",
+                "name": "token",
+                "required": true,
+                "schema": {
+                  "type": "object",
+                  "required": [ "token"],
+                  "properties": {
+                    "token": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+          ],
+          "description": "Reset get registered user `object` back from the server.",
+          "produces": "application/json",
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/addNote": {
+        "post": {
+          "tags": [""],
+          "summary": "Register a user.",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "Register Data",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "required": ["title", "description", "isPined", "isArchieved","isDeleted", "color"],
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "isPined": {
+                    "type": "string"
+                  },
+                  "isArchieved": {
+                    "type": "string"
+                  },
+                  "isDeleted": {
+                    "type": "string"
+                  },
+                  "color": {
+                    "type": "string"
+                  }
+
+                }
+              }
+            },
+            {
+              "in": "header",
+              "name": "token",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "required": [ "token"],
+                "properties": {
+                  "token": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ],
+          "description": "Register a user and get registered user `object` back from the server.",
+          "produces": "application/json",
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      }
+    }
+  }

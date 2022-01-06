@@ -29,14 +29,12 @@ class NoteService {
     }
 
     async updateNoteService(req, res) {
-        let foundNote = await NotesModel.searchNotes(req,res);
-      
+        let foundNote = await NotesModel.searchNotes(req, res);
         if (foundNote.data) {
-            let data = await NotesModel.updateNote(req,foundNote)
+            let data = await NotesModel.updateNote(req, foundNote)
             return data;
         }
         else return foundNote;
-       
     }
     async getisArchievedService(req, res) {
         let foundNote = await NotesModel.findNotes({ user_ID: req.data.id, isArchieved: true });
@@ -46,7 +44,7 @@ class NoteService {
 
     }
     async getisDeletedService(req, res) {
-        let foundNote = await NotesModel.findisDeletedNotes({ user_ID: req.data.id, isDeleted: true });
+        let foundNote = await NotesModel.findNotes({ user_ID: req.data.id, isDeleted: true });
         if (foundNote) {
             return foundNote
         };

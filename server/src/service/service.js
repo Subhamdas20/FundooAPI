@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer')
 require('dotenv').config();
 class UserService {
     async registerService(req, res) {
-        let foundUser = await userModel.findUser({email:req.email});
+        let foundUser = await userModel.findUser({ email: req.email });
         if (!foundUser.data) {
             const passwordHash = await bcrypt.hash(req.password, 10)
             let newUser = new newModel({
@@ -23,8 +23,8 @@ class UserService {
     }
 
     async loginService(req, res) {
-        let findUser = await userModel.findUser({email:req.email});
-       
+        let findUser = await userModel.findUser({ email: req.email });
+
         if (findUser.data) {
             let passwordVerify = await bcrypt.compare(req.password, findUser.data.password)
             if (passwordVerify) {
@@ -62,7 +62,7 @@ class UserService {
         else return findUser;
     }
     async forgetService(req, res) {
-        let foundUser = await userModel.findUser({email:req.email});
+        let foundUser = await userModel.findUser({ email: req.email });
         if (foundUser.data) {
             const payload = { id: foundUser.data._id, email: foundUser.data.email }
             const token = jwt.sign(payload, process.env.TOKEN_SECRET, { expiresIn: "1d" })
@@ -79,26 +79,25 @@ class UserService {
                 subject: 'Forgot password',
                 html: `<div>
                 Hi,
-                Here is the link to reset password <a href="">click here</a></div>`
+                Here is the link to reset password <a href="http://localhost:4000/resetpassword">click here</a></div>`
             };
-              
-            mailTransporter.sendMail(mailDetails, function(err, data) {
-                if(err) {
+
+            mailTransporter.sendMail(mailDetails, function (err, data) {
+                if (err) {
                     console.log('Error');
                     console.log(err);
                 } else {
                     console.log('Email sent successfully');
                 }
-            });     
+            });
         }
         else return foundUser;
     }
     async resetService(req, res) {
-        let foundUser = await userModel.findUser({_id:req.data.id});
+        let foundUser = await userModel.findUser({ _id: req.data.id });
         if (foundUser.data) {
             const passwordHash = await bcrypt.hash(req.password, 10)
-            let updatedData = newModel.updateOne({_id:req.data.id},{password:passwordHash});
-            return updatedData;
+            let updatedData = newModel.updateOne({ _id: req.data.id }, { password: passwordHash });
         }
         else return foundUser;
     }

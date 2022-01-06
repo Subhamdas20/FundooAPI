@@ -53,7 +53,7 @@ class NoteModel {
                     if (data) {
                         (response.success = true),
                             (response.data = data),
-                            (response.status = 202),
+                            (response.status = 200),
                             (response.message = "Notes found");
                         resolve(response);
                     }
@@ -108,6 +108,12 @@ class NoteModel {
     }
 
     updateNote(req, data) {
+        var response = {
+            message: "",
+            data: "",
+            success: "",
+            status: 200
+        };
         let NoteModel = {
             title: req.title ? req.title : data.title,
             description: req.description ? req.description : data.description,
@@ -119,7 +125,13 @@ class NoteModel {
         return new Promise((resolve, reject) => {
             notes.updateOne({ _id: req._id }, NoteModel)
                 .then((result) => {
-                    resolve(result)
+                    if (result) {
+                        (response.success = true),
+                            (response.result = result),
+                            (response.status = 200),
+                            (response.message = "Notes Updated");
+                        resolve(response)
+                    }
                 })
                 .catch((err) => {
                     reject(
