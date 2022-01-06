@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer')
 require('dotenv').config();
 class UserService {
     async registerService(req, res) {
-        let foundUser = await userModel.findUser({ email: req.email });
+        let foundUser = await userModel.findUser ({ email: req.email});
         if (!foundUser.data) {
             const passwordHash = await bcrypt.hash(req.password, 10)
             let newUser = new newModel({

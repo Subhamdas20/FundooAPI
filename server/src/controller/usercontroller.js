@@ -1,6 +1,6 @@
 
 const logger = require('../config/logger.js');
-const service = require('../service/service.js')
+const service = require('../service/userservice.js')
 class UserController {
     async registerUser(req, res) {
         await service.registerService(req.body).then((result) => {

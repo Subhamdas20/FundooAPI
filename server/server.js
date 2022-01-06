@@ -7,7 +7,6 @@ let validator = require('express-validator')
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("../server/swagger.json");
 
-
 const router = require('../server/src/routes/userRoutes')
 const app = express();
 const PORT = process.env.PORT;

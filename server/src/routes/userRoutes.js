@@ -1,14 +1,15 @@
 
 const express = require('express')
-const controller = require('../controller/controller')
+const usercontroller = require('../controller/usercontroller')
 const validate = require('../middleware/userValidation')
 const NotesController = require('../controller/notesController')
 const auth = require('../middleware/userAuthentication')
 const router = express.Router();
-router.post("/register", validate.registerValidate, controller.registerUser);
-router.post("/login", validate.loginValidate, controller.loginUser);
-router.post("/forgetpassword",controller.forgetUser)
-router.post("/resetpassword",auth,controller.resetUser)
+
+router.post("/register", validate.registerValidate, usercontroller.registerUser);
+router.post("/login", validate.loginValidate, usercontroller.loginUser);
+router.post("/forgetpassword",usercontroller.forgetUser)
+router.post("/resetpassword",auth,usercontroller.resetUser)
 
 router.post("/addNote", auth, NotesController.addNotes);
 router.get("/getNote", auth, NotesController.getNotes);
