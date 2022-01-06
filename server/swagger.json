@@ -80,11 +80,11 @@
       "/forgetpassword": {
         "post": {
           "tags": [""],
-          "summary": "Login a user.",
+          "summary": "Reset a user.",
           "parameters": [
             {
               "in": "body",
-              "name": "Login Data",
+              "name": "Reset Data",
               "required": true,
               "schema": {
                 "type": "object",
@@ -109,11 +109,11 @@
       "/resetpassword": {
         "post": {
           "tags": [""],
-          "summary": "Login a user.",
+          "summary": "Reset a user.",
           "parameters": [
             {
               "in": "body",
-              "name": "Login Data",
+              "name": "Reset Data",
               "required": true,
               "schema": {
                 "type": "object",
@@ -155,11 +155,11 @@
       "/addNote": {
         "post": {
           "tags": [""],
-          "summary": "Register a user.",
+          "summary": "Add a note.",
           "parameters": [
             {
               "in": "body",
-              "name": "Register Data",
+              "name": "addNotes Data",
               "required": true,
               "schema": {
                 "type": "object",
