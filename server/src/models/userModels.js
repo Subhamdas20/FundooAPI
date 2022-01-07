@@ -53,7 +53,6 @@ let userModel = {
         });
     },
 
-
     registerUserModel: (obj) => {
         let response = {
             sucess: true,

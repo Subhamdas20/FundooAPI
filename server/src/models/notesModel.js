@@ -80,7 +80,7 @@ class NoteModel {
             status: 200
         };
         return new Promise((resolve, reject) => {
-            notes.findOne({ _id: req._id })
+            notes.findOne({ _id: req._id, user_Email:req.data.email})
                 .then((data) => {
                     if (data) {
 
