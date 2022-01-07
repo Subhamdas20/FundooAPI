@@ -1,39 +1,46 @@
 
 const logger = require('../config/logger.js');
-const service = require('../service/userservice.js')
-class UserController {
-    async registerUser(req, res) {
-        await service.registerService(req.body).then((result) => {
+const userService = require('../service/userservice')
+
+
+const userController = {
+    registerUser: async (req, res) => {
+        await userService.registerService(req.body).then((result) => {
+
             res.status(200).json(result)
         }).catch((err => {
-            logger.error("Error in registerUser")
+            logger.error("Error in registerUser", err)
             return res.status(400).send(err);
         }))
-    }
-    async loginUser(req, res) {
-        await service.loginService(req.body).then((result) => {
+    },
+    loginUser: async (req, res) => {
+        await userService.loginService(req.body).then((result) => {
+
             res.status(200).json(result)
         }).catch((err => {
-            logger.error("Error in loginUser")
+            logger.error("Error in loginUser", err)
             return res.status(400).send(err);
         }))
-    }
-    async forgetUser(req, res) {
-        await service.forgetService(req.body).then((result) => {
+    },
+    forgetUser: async (req, res) => {
+        await userService.forgetService(req.body).then((result) => {
+
             res.status(200).json(result)
         }).catch((err => {
-            logger.error("Error in forgetUser")
+            logger.error("Error in forgetUser", err)
             return res.status(400).send(err);
         }))
-    }
-    async resetUser(req, res) {
-        await service.resetService(req.body).then((result) => {
+    },
+    resetUser: async (req, res) => {
+        await userService.resetService(req.body).then((result) => {
+
             res.status(200).json(result)
         }).catch((err => {
-            logger.error("Error in resetUser")
+            logger.error("Error in resetUser", err)
             return res.status(400).send(err);
         }))
     }
 }
-module.exports = new UserController();
 
+
+module.exports = userController;

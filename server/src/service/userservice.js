@@ -1,14 +1,15 @@
 const model = require('../models/userModels')
-const userModel = new model.UserModel();
+const userModel = model.userModel;
 const newModel = model.User;
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
 const nodemailer = require('nodemailer')
 require('dotenv').config();
-class UserService {
-    async registerService(req, res) {
-        let foundUser = await userModel.findUser ({ email: req.email});
-        if (!foundUser.data) {
+
+const userService = {
+    registerService: async (req, res) => {
+        let userDetails = await userModel.foundUser({ email: req.email });
+        if (!userDetails.data) {
             const passwordHash = await bcrypt.hash(req.password, 10)
             let newUser = new newModel({
                 firstname: req.firstname,
@@ -16,29 +17,27 @@ class UserService {
                 email: req.email,
                 password: passwordHash
             })
-            let saveData = userModel.registerModel(newUser);
+            let saveData = userModel.registerUserModel(newUser);
             return saveData;
         }
-        else return foundUser;
-    }
-
-    async loginService(req, res) {
-        let findUser = await userModel.findUser({ email: req.email });
-
-        if (findUser.data) {
-            let passwordVerify = await bcrypt.compare(req.password, findUser.data.password)
+        else return userDetails;
+    },
+    loginService: async (req, res) => {
+        let userDetails = await userModel.foundUser({ email: req.email });
+        if (userDetails.data) {
+            let passwordVerify = await bcrypt.compare(req.password, userDetails.data.password)
             if (passwordVerify) {
-                const payload = { id: findUser.data._id, email: findUser.data.email }
+                const payload = { id: userDetails.data._id, email: userDetails.data.email }
                 const token = jwt.sign(payload, process.env.TOKEN_SECRET, { expiresIn: "1d" })
                 return new Promise((resolve, reject) => {
                     resolve({
                         message: "Login success",
                         data: {
-                            userId: findUser.data._id,
-                            firstname: findUser.data.firstname,
-                            lastname: findUser.data.lastname,
-                            email: findUser.data.email,
-                            createdAt: findUser.data.createdAt,
+                            userId: userDetails.data._id,
+                            firstname: userDetails.data.firstname,
+                            lastname: userDetails.data.lastname,
+                            email: userDetails.data.email,
+                            createdAt: userDetails.data.createdAt,
                             token: token
                         },
                         success: "",
@@ -59,12 +58,12 @@ class UserService {
                 })
             }
         }
-        else return findUser;
-    }
-    async forgetService(req, res) {
-        let foundUser = await userModel.findUser({ email: req.email });
-        if (foundUser.data) {
-            const payload = { id: foundUser.data._id, email: foundUser.data.email }
+        else return userDetails;
+    },
+    forgetService: async (req, res) => {
+        let userDetails = await userModel.foundUser({ email: req.email });
+        if (userDetails.data) {
+            const payload = { id: userDetails.data._id, email: userDetails.data.email }
             const token = jwt.sign(payload, process.env.TOKEN_SECRET, { expiresIn: "1d" })
             let mailTransporter = nodemailer.createTransport({
                 service: 'gmail',
@@ -84,23 +83,44 @@ class UserService {
 
             mailTransporter.sendMail(mailDetails, function (err, data) {
                 if (err) {
-                    console.log('Error');
-                    console.log(err);
+
+                    logger.error(err);
                 } else {
-                    console.log('Email sent successfully');
+                    logger.info('Email sent successfully');
                 }
             });
+            return new Promise((resolve, reject) => {
+                let response = {
+                    message: "Email sent",
+                    data: "",
+                    success: "true",
+                    status: 200
+                }
+                resolve(response)
+            })
         }
-        else return foundUser;
-    }
-    async resetService(req, res) {
-        let foundUser = await userModel.findUser({ _id: req.data.id });
-        if (foundUser.data) {
+        else return userDetails;
+    },
+    resetService: async (req, res) => {
+        let userDetails = await userModel.foundUser({ _id: req.data.id });
+        if (userDetails.data) {
             const passwordHash = await bcrypt.hash(req.password, 10)
             let updatedData = newModel.updateOne({ _id: req.data.id }, { password: passwordHash });
+            let response = {
+                message: "Password Updated",
+                data: "",
+                success: "true",
+                status: 200
+            }
+            return new Promise((resolve, reject) => {
+
+                resolve({ response })
+            })
         }
-        else return foundUser;
+        else return userDetails;
     }
 }
 
-module.exports = new UserService();
+module.exports = userService
+
+

@@ -18,8 +18,8 @@ const userSchema = new mongoose.Schema({
 })
 
 const User = mongoose.model('Users', userSchema);
-class UserModel {
-    findUser(req) {
+let userModel = {
+    foundUser: (req) => {
         var response = {
             message: "",
             data: "",
@@ -51,10 +51,10 @@ class UserModel {
                     );
                 });
         });
-    }
+    },
 
 
-    registerModel(obj) {
+    registerUserModel: (obj) => {
         let response = {
             sucess: true,
             message: '',
@@ -78,6 +78,7 @@ class UserModel {
             })
         })
     }
+
 }
 
-module.exports = { UserModel, User };
+module.exports = { userModel, User };
