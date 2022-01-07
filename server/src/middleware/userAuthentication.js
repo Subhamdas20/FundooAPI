@@ -1,11 +1,10 @@
 const jwt = require('jsonwebtoken')
 
-const auth = (req, res, next) => {
+const authentication = (req, res, next) => {
     let token = req.get('token')
-
     jwt.verify(token, process.env.TOKEN_SECRET, ((err, decoder) => {
         if (err) {
-            return res.status(401).send({ message: "Not Authenticated" })
+            return res.status(401).send({ message: "Not authenticated" })
         }
         else {
             req.body['data'] = decoder;
@@ -15,4 +14,4 @@ const auth = (req, res, next) => {
     }))
 }
 
-module.exports = auth;
+module.exports = authentication;
