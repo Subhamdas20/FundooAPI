@@ -15,8 +15,9 @@ const addNotes = new mongoose.Schema({
 
 const notes = mongoose.model('Notes', addNotes);
 
-class NoteModel {
-    registerModel(obj) {
+let notesModel = {
+
+    registerModel: (obj) => {
         let response = {
             sucess: true,
             message: '',
@@ -39,8 +40,8 @@ class NoteModel {
                 reject({ response });
             })
         })
-    }
-    findNotes(req) {
+    },
+    findNotes: (req) => {
         var response = {
             message: "",
             data: "",
@@ -71,8 +72,8 @@ class NoteModel {
                     );
                 });
         });
-    }
-    searchNotes(req) {
+    },
+    searchNotes: (req) => {
         var response = {
             message: "",
             data: "",
@@ -80,7 +81,7 @@ class NoteModel {
             status: 200
         };
         return new Promise((resolve, reject) => {
-            notes.findOne({ _id: req._id, user_Email:req.data.email})
+            notes.findOne({ _id: req._id, user_Email: req.data.email })
                 .then((data) => {
                     if (data) {
 
@@ -105,9 +106,8 @@ class NoteModel {
                     );
                 });
         });
-    }
-
-    updateNote(req, data) {
+    },
+    updateNote: (req, data) => {
         var response = {
             message: "",
             data: "",
@@ -142,4 +142,5 @@ class NoteModel {
     }
 }
 
-module.exports = { notes, NoteModel }
+
+module.exports = { notes, notesModel }

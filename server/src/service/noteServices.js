@@ -1,6 +1,6 @@
 const notesModel = require('../models/notesModel')
 const notes = notesModel.notes
-const NotesModel = new notesModel.NoteModel()
+const NotesModel = notesModel.notesModel
 
 
 let noteService = {
@@ -41,7 +41,7 @@ let noteService = {
         let foundNote = await NotesModel.findNotes({ user_ID: req.data.id, isArchieved: true });
         return foundNote
     },
-    getisDeletedService : async (req, res)=> {
+    getisDeletedService: async (req, res) => {
         let foundNote = await NotesModel.findNotes({ user_ID: req.data.id, isDeleted: true });
         if (foundNote) {
             return foundNote
