@@ -6,14 +6,14 @@ let userValidate = {
             .check("firstname")
             .isAlpha()
             .withMessage("firstName is required")
-            .isLength({ min: 1 })
-            .withMessage("Min 1 alphabet required in FirstName");
+            .isLength({ min: 2 })
+            .withMessage("Min 2 alphabet required in FirstName");
         req
             .check("lastname")
             .isAlpha()
             .withMessage("lastName is required")
-            .isLength({ min: 1 })
-            .withMessage("Min 1 alphabet required in LastName");
+            .isLength({ min: 2 })
+            .withMessage("Min 2 alphabet required in LastName");
 
         req.check("email").isEmail().withMessage("Email is not valid");
 

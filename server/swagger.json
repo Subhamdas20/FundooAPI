@@ -210,6 +210,158 @@
             }
           }
         }
+      },
+      "/getNote": {
+        "get": {
+          "tags": [""],
+          "summary": "get a note.",
+          "parameters": [
+         
+            {
+              "in": "header",
+              "name": "token",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "required": [ "token"],
+                "properties": {
+                  "token": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ],
+          "description": " get note `object` back from the server.",
+          "produces": "application/json",
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/updateNote": {
+        "put": {
+          "tags": [""],
+          "summary": "Update a note.",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "updateNote Data",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "required": ["title", "description", "isPined", "isArchieved","isDeleted", "color","_id"],
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "isPined": {
+                    "type": "string"
+                  },
+                  "isArchieved": {
+                    "type": "string"
+                  },
+                  "isDeleted": {
+                    "type": "string"
+                  },
+                  "color": {
+                    "type": "string"
+                  },
+                  "_id":{
+                    "type":"string"
+                  }
+
+                }
+              }
+            },
+            {
+              "in": "header",
+              "name": "token",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "required": [ "token"],
+                "properties": {
+                  "token": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ],
+          "description": "Update a Note and get updatedNote `object` back from the server.",
+          "produces": "application/json",
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/isArchieved": {
+        "get": {
+          "tags": [""],
+          "summary": "get isArchieved notes",
+          "parameters": [
+     
+            {
+              "in": "header",
+              "name": "token",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "required": [ "token"],
+                "properties": {
+                  "token": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ],
+          "description": "Get isArchievedNote `object` back from the server.",
+          "produces": "application/json",
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/isDeleted": {
+        "get": {
+          "tags": [""],
+          "summary": "Get is deleted Note",
+          "parameters": [
+     
+            {
+              "in": "header",
+              "name": "token",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "required": [ "token"],
+                "properties": {
+                  "token": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ],
+          "description": "Get isDeleted `object` back from the server.",
+          "produces": "application/json",
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
       }
     }
   }
