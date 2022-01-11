@@ -20,4 +20,4 @@ app.use('/',router)
 app.listen(PORT, () => { console.log(`server running at Port ${PORT}`) })
 database()
 
-
+module.exports = app 

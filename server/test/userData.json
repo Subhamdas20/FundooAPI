@@ -1,0 +1,34 @@
+{
+    "UserData1":{
+        "firstname": "azdwagg",
+        "lastname": "bbbawrgbb",      
+        "email": "poikjhuwef@gmail.com",
+        "password": "1234awg"
+    },
+    
+    "UserData2":{
+        "firstname": "azdwagg",
+        "lastname": "bbbawrgbb",      
+        "email": "poikjhu@gmail",
+        "password": "1234awg"
+    },
+    "UserData3":{
+        "firstname": "azdwagg",
+        "lastname": "bbbawrgbb",      
+        "email": "poikjhu@gmail.com",
+        "password": "1234awg"
+    },
+    "UserData4":{
+        "firstname": "a",
+        "lastname": "bbbawrgbb",      
+        "email": "poikjhu@gmail.com",
+        "password": "1234awg"
+    },
+    "UserData4":{
+        "firstname": "aaefa",
+        "lastname": "b",      
+        "email": "poikjhu@gmail.com",
+        "password": "1234awg"
+    }
+    
+}
