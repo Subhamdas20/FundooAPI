@@ -49,7 +49,7 @@ const userService = {
             else {
                 return new Promise((resolve, reject) => {
                     reject({
-                        statusCode: 400,
+                        statusCode: 403,
                         name: "Error",
                         message: "invalid password",
                         code: "LOGIN_FAILED"

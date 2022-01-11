@@ -47,3 +47,19 @@
 {"level":"error","message":"Error in resetUser Converting circular structure to JSON\n    --> starting at object with constructor 'Topology'\n    |     property 's' -> object with constructor 'Object'\n    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'\n    --- property 'topology' closes the circle","stack":"TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'Topology'\n    |     property 's' -> object with constructor 'Object'\n    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'\n    --- property 'topology' closes the circle\n    at JSON.stringify (<anonymous>)\n    at stringify (E:\\cfp\\FundooNotes\\server\\node_modules\\express\\lib\\response.js:1128:12)\n    at ServerResponse.json (E:\\cfp\\FundooNotes\\server\\node_modules\\express\\lib\\response.js:260:14)\n    at E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:37:29\n    at async resetUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:35:9)","timestamp":"2022-01-07T05:14:29.479Z"}
 {"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":400,"timestamp":"2022-01-07T06:46:30.798Z"}
 {"level":"error","message":"Error in add notes","timestamp":"2022-01-08T09:28:50.466Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":400,"timestamp":"2022-01-11T14:09:59.195Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":400,"timestamp":"2022-01-11T14:10:20.120Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T14:13:43.863Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T14:14:44.097Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T14:14:44.168Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T14:15:26.996Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:16:08.945Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:16:22.553Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:17:07.023Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:17:50.218Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:18:20.399Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T14:18:56.622Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T14:19:45.836Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:20:08.636Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:21:29.568Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:21:38.946Z"}

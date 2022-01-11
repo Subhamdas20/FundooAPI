@@ -38,10 +38,10 @@ let userModel = {
                         resolve(response);
                     }
                     else {
-                        resolve({
+                        reject({
                             message: "user not found please register first",
                             data: null,
-                            status: 400
+                            status: 403
                         });
                     }
                 })

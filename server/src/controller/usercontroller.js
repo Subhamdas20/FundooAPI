@@ -18,7 +18,7 @@ const userController = {
             res.status(200).json(result)
         }).catch((err => {
             logger.error("Error in loginUser", err)
-            return res.status(400).send(err);
+            return res.status(403).send(err);
         }))
     },
     forgetUser: async (req, res) => {
