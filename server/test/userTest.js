@@ -133,3 +133,64 @@ describe('login API', () => {
                 });
         })
 })
+describe('forget API', () => {
+    it('if valid email sent should send mail', (done) => {
+        const userDetails = employeeJSON.forgetData1;
+        chai.request(server)
+            .post('/forgetpassword')
+            .send(userDetails)
+            .end((err, res) => {
+                if (err) {
+                    done();
+                }
+                res.should.have.status(200);
+                res.body.should.have.property('message').equal('Email sent');
+                done();
+            });
+    }),
+    it('if unregistered email sent should not send mail', (done) => {
+        const userDetails = employeeJSON.forgetData2;
+        chai.request(server)
+            .post('/forgetpassword')
+            .send(userDetails)
+            .end((err, res) => {
+                if (err) {
+                    done();
+                }
+                res.should.have.status(403);
+                res.body.should.have.property('message').equal('user not found please register first');
+                done();
+            });
+    })
+    it('if invalid email sent should not send mail', (done) => {
+        const userDetails = employeeJSON.forgetData3;
+        chai.request(server)
+            .post('/forgetpassword')
+            .send(userDetails)
+            .end((err, res) => {
+                if (err) {
+                    done();
+                }
+                res.should.have.status(403);
+               
+                done();
+            });
+    })
+
+})
+describe('resetPassword API', () => {
+    it('if valid email sent should send mail', (done) => {
+        const userDetails = employeeJSON.forgetData1;
+        chai.request(server)
+            .post('/resetpassword')
+            .send(userDetails)
+            .end((err, res) => {
+                if (err) {
+                    done();
+                }
+                res.should.have.status(200);
+                res.body.should.have.property('message').equal('Email sent');
+                done();
+            });
+    })
+})

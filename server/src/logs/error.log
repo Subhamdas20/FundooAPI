@@ -63,3 +63,67 @@
 {"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:20:08.634Z"}
 {"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:21:29.567Z"}
 {"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:21:38.945Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T14:21:51.950Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:21:52.180Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:28:21.163Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T14:34:48.413Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:34:48.899Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:41:46.606Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:45:18.215Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:46:19.527Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:47:19.126Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:47:38.680Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:48:17.391Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:49:54.496Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:49:59.967Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T14:52:02.181Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T14:52:02.293Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:52:02.417Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:52:02.761Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:52:32.916Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:54:07.843Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:54:47.207Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:55:52.099Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:56:44.904Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:56:54.662Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:57:10.124Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T14:57:10.126Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:02:19.538Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:02:19.541Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T15:02:55.348Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T15:02:55.726Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:02:55.859Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:02:55.913Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:03:49.328Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:04:16.061Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T15:04:24.715Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T15:04:25.090Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:04:25.267Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:04:25.354Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T15:09:45.730Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T15:09:45.865Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:09:46.023Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:09:46.090Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:10:39.929Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:12:17.894Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:12:51.149Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T15:13:26.173Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:13:26.564Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:13:26.588Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T15:13:26.620Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T15:13:54.747Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T15:13:55.139Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:13:55.279Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:13:55.627Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T15:14:19.850Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T15:14:19.960Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:14:20.079Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:14:20.159Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T15:14:53.722Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T15:14:55.088Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:14:55.668Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:14:55.724Z"}
+{"data":null,"level":"error","message":"Error in loginUser user not found please register first","status":403,"timestamp":"2022-01-11T15:15:20.713Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-11T15:15:20.883Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:15:21.018Z"}
+{"data":null,"level":"error","message":"Error in forgetUser user not found please register first","status":403,"timestamp":"2022-01-11T15:15:21.115Z"}

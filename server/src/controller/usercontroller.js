@@ -27,16 +27,15 @@ const userController = {
             res.status(200).json(result)
         }).catch((err => {
             logger.error("Error in forgetUser", err)
-            return res.status(400).send(err);
+            return res.status(403).send(err);
         }))
     },
     resetUser: async (req, res) => {
         await userService.resetService(req.body).then((result) => {
-
             res.status(200).json(result)
         }).catch((err => {
             logger.error("Error in resetUser", err)
-            return res.status(400).send(err);
+            return res.status(403).send(err);
         }))
     }
 }
