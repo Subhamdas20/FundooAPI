@@ -8,7 +8,7 @@ chai.use(chaiHttp);
 
 const rawdata = fs.readFileSync('test/userData.json');
 const employeeJSON = JSON.parse(rawdata);
-// let jwToken = '';
+var jwToken = '';
 
 // Test cases for Registration
 describe('registration API', () => {
@@ -53,7 +53,6 @@ describe('registration API', () => {
                     done();
                 }
                 res.should.have.status(200);
-                res.body.should.have.property('message').equal("user already exists");
                 done();
             });
     }),
@@ -148,20 +147,20 @@ describe('forget API', () => {
                 done();
             });
     }),
-    it('if unregistered email sent should not send mail', (done) => {
-        const userDetails = employeeJSON.forgetData2;
-        chai.request(server)
-            .post('/forgetpassword')
-            .send(userDetails)
-            .end((err, res) => {
-                if (err) {
+        it('if unregistered email sent should not send mail', (done) => {
+            const userDetails = employeeJSON.forgetData2;
+            chai.request(server)
+                .post('/forgetpassword')
+                .send(userDetails)
+                .end((err, res) => {
+                    if (err) {
+                        done();
+                    }
+                    res.should.have.status(403);
+                    res.body.should.have.property('message').equal('user not found please register first');
                     done();
-                }
-                res.should.have.status(403);
-                res.body.should.have.property('message').equal('user not found please register first');
-                done();
-            });
-    })
+                });
+        })
     it('if invalid email sent should not send mail', (done) => {
         const userDetails = employeeJSON.forgetData3;
         chai.request(server)
@@ -172,24 +171,363 @@ describe('forget API', () => {
                     done();
                 }
                 res.should.have.status(403);
-               
+
                 done();
             });
     })
 
 })
 describe('resetPassword API', () => {
-    it('if valid email sent should send mail', (done) => {
-        const userDetails = employeeJSON.forgetData1;
+    beforeEach((done) => {
+        chai
+            .request(server)
+            .post('/login')
+            .send(employeeJSON.LoginData1)
+            .end((_err, res) => {
+                jwToken = res.body.data.token;
+                res.should.have.status(200);
+                done();
+            });
+    });
+
+    it('if valid token sent and valid password sent should update in db', (done) => {
+
+        const userDetails = employeeJSON.resetData1;
         chai.request(server)
             .post('/resetpassword')
+            .set({ token: jwToken })
             .send(userDetails)
             .end((err, res) => {
                 if (err) {
+                    console.log(err);
                     done();
                 }
                 res.should.have.status(200);
-                res.body.should.have.property('message').equal('Email sent');
+
+                done();
+            });
+    })
+
+    it('if invalid token sent then status code should be 401', (done) => {
+
+        const userDetails = employeeJSON.resetData1;
+        chai.request(server)
+            .post('/resetpassword')
+            .set({ token: "esf.esg.gs" })
+            .send(userDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(401);
+
+                done();
+            });
+    })
+})
+describe('addNotes API', () => {
+    beforeEach((done) => {
+        chai
+            .request(server)
+            .post('/login')
+            .send(employeeJSON.LoginData1)
+            .end((_err, res) => {
+                jwToken = res.body.data.token;
+                res.should.have.status(200);
+                done();
+            });
+    });
+
+    it('if valid token sent then notes should be added in db', (done) => {
+
+        const noteDetails = employeeJSON.addNotesData1;
+        chai.request(server)
+            .post('/addNote')
+            .set({ token: jwToken })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(200);
+                done();
+            });
+    })
+    it('if invalid token then status code should be 401', (done) => {
+        const noteDetails = employeeJSON.addNotesData1;
+        chai.request(server)
+            .post('/addNote')
+            .set({ token: "eafae.eaf.eag" })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(401);
+                res.body.should.have.property('message').equal('Not authenticated');
+                done();
+            });
+    })
+    it('if invalid note  sent should not be add to db', (done) => {
+
+        const noteDetails = employeeJSON.addNotesData2;
+        chai.request(server)
+            .post('/addNote')
+            .set({ token: jwToken })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(403);
+                done();
+            });
+    })
+    it('if invalid note title sent should not be add to db', (done) => {
+
+        const noteDetails = employeeJSON.addNotesData2;
+        chai.request(server)
+            .post('/addNote')
+            .set({ token: jwToken })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(403);
+                res.body.should.be.a('array');
+                res.body[0].should.have.property('msg')
+                res.body[0].msg.should.equal('title must be 2 characters long');
+                done();
+            });
+    })
+    it('if invalid note description sent should not be add to db', (done) => {
+
+        const noteDetails = employeeJSON.addNotesData3;
+        chai.request(server)
+            .post('/addNote')
+            .set({ token: jwToken })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(403);
+                res.body.should.be.a('array');
+                res.body[0].should.have.property('msg')
+                res.body[0].msg.should.equal('description must be 2 characters long');
+                done();
+            });
+    })
+    it('if invalid isPinned Data sent should not be add to db', (done) => {
+
+        const noteDetails = employeeJSON.addNotesData4;
+        chai.request(server)
+            .post('/addNote')
+            .set({ token: jwToken })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(403);
+                res.body.should.be.a('array');
+                res.body[0].should.have.property('msg')
+                res.body[0].msg.should.equal('isPinned must be 2 characters long');
+                done();
+            });
+    })
+    it('if invalid isArchieved Data sent should not be add to db', (done) => {
+
+        const noteDetails = employeeJSON.addNotesData5;
+        chai.request(server)
+            .post('/addNote')
+            .set({ token: jwToken })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(403);
+                res.body.should.be.a('array');
+                res.body[0].should.have.property('msg')
+                res.body[0].msg.should.equal('isArchieved Must be a boolean true or false');
+                done();
+            });
+    })
+    it('if invalid isDeleted Data sent should not be add to db', (done) => {
+
+        const noteDetails = employeeJSON.addNotesData6;
+        chai.request(server)
+            .post('/addNote')
+            .set({ token: jwToken })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(403);
+                res.body.should.be.a('array');
+                res.body[0].should.have.property('msg')
+                res.body[0].msg.should.equal('isDeleted Must be a boolean true or false');
+                done();
+            });
+    })
+})
+describe('getNotes API', () => {
+    beforeEach((done) => {
+        chai
+            .request(server)
+            .post('/login')
+            .send(employeeJSON.LoginData1)
+            .end((_err, res) => {
+                jwToken = res.body.data.token;
+                res.should.have.status(200);
+                done();
+            });
+    });
+
+    it('if valid token sent then get notes should give status code 200', (done) => {
+        const noteDetails = employeeJSON.getNotes;
+        chai.request(server)
+            .get('/getNote')
+            .set({ token: jwToken })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(200);
+                done();
+            });
+    })
+
+    it('if invalid valid token sent then getnotes should give status code 401', (done) => {
+        const noteDetails = employeeJSON.getNotes;
+        chai.request(server)
+            .get('/getNote')
+            .set({ token: "wsegs.aef.aegf" })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(401);
+                done();
+            });
+    })
+})
+
+describe('updateNotes API', () => {
+    beforeEach((done) => {
+        chai
+            .request(server)
+            .post('/login')
+            .send(employeeJSON.LoginData1)
+            .end((_err, res) => {
+                jwToken = res.body.data.token;
+                res.should.have.status(200);
+                done();
+            });
+    });
+
+    it('if valid token sent then notes should be updated', (done) => {
+        const noteDetails = employeeJSON.updateNotes;
+        chai.request(server)
+            .put('/updateNote')
+            .set({ token: jwToken })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(200);
+                done();
+            });
+    })
+    it('if invalid  token sent then notes should not be updated', (done) => {
+        const noteDetails = employeeJSON.updateNotes;
+        chai.request(server)
+            .put('/updateNote')
+            .set({ token: "aef.aef.eaf" })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(401);
+                done();
+            });
+    })
+    it('if valid  token sent and invalid _ID sent then notes should not be updated', (done) => {
+        const noteDetails = employeeJSON.updateNotes2;
+        chai.request(server)
+            .put('/updateNote')
+            .set({ token: jwToken })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(400);
+                done();
+            });
+    })
+})
+describe('isArchieved API', () => {
+    beforeEach((done) => {
+        chai
+            .request(server)
+            .post('/login')
+            .send(employeeJSON.LoginData1)
+            .end((_err, res) => {
+                jwToken = res.body.data.token;
+                res.should.have.status(200);
+                done();
+            });
+    });
+
+    it('if valid token sent we get status code 200 in isArchievd notes', (done) => {
+        const noteDetails = "";
+        chai.request(server)
+            .get('/isArchieved')
+            .set({ token: jwToken })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(200);
+                done();
+            });
+    })
+    it('if invalid token sent we get status code 401 in isArchievd notes', (done) => {
+        const noteDetails = "";
+        chai.request(server)
+            .get('/isArchieved')
+            .set({ token: "aesdf.efaeg.aef" })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(401);
                 done();
             });
     })

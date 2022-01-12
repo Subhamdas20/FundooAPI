@@ -3,7 +3,8 @@ const userModel = model.userModel;
 const newModel = model.User;
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
-const nodemailer = require('nodemailer')
+const nodemailer = require('nodemailer');
+const logger = require('../config/logger');
 require('dotenv').config();
 
 const userService = {
@@ -60,7 +61,7 @@ const userService = {
         }
         else return userDetails;
     },
-    forgetService: async (req, res) => {
+    forgetPasswordService: async (req, res) => {
         let userDetails = await userModel.foundUser({ email: req.email });
         if (userDetails.data) {
             const payload = { id: userDetails.data._id, email: userDetails.data.email }
@@ -101,21 +102,31 @@ const userService = {
         }
         else return userDetails;
     },
-    resetService: async (req, res) => {
+    resetPasswordService: async (req, res) => {
+        let response = {
+            message: "Password Updated",
+            data: "",
+            success: "true",
+            status: 200
+        }
         let userDetails = await userModel.foundUser({ _id: req.data.id });
         if (userDetails.data) {
             const passwordHash = await bcrypt.hash(req.password, 10)
-            let updatedData = newModel.updateOne({ _id: req.data.id }, { password: passwordHash });
-            let response = {
-                message: "Password Updated",
-                data: "",
-                success: "true",
-                status: 200
-            }
-            return new Promise((resolve, reject) => {
 
-                resolve({ response })
+            // let updatedData = newModel.updateOne({ _id: req.data.id }, { password: passwordHash });
+            let updatedData = newModel.findByIdAndUpdate(req.data.id, { password: passwordHash }, function (err, docs) {
+                if (err) {
+                    logger.info(err)
+                }
+                else  {
+                    logger.info("reset successful")
+                };
             })
+            return new Promise((resolve, reject) => {
+                logger.info(response);
+                resolve(response)
+            })
+
         }
         else return userDetails;
     }

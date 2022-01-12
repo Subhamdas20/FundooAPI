@@ -5,6 +5,7 @@ const noteService = require('../service/noteServices')
 const noteController = {
     addNotes: async (req, res) => {
         await noteService.createNoteService(req.body).then((result) => {
+            logger.info("Notes added successfully")
             res.status(200).json(result)
         }).catch((err => {
             logger.error("Error in add notes")
@@ -13,6 +14,7 @@ const noteController = {
     },
     getNotes: async (req, res) => {
         await noteService.getNoteService(req.body).then((result) => {
+            logger.info("Get notes successful")
             res.status(200).json(result)
         }).catch((err => {
             logger.error("Error in get notes")
@@ -21,6 +23,7 @@ const noteController = {
     },
     deleteNotes: async (req, res) => {
         await noteService.deleteNoteService(req.body).then((result) => {
+            logger.info("Delete notes sucessful")
             res.status(200).json(result)
         }).catch((err => {
             logger.error("Error in delete notes")

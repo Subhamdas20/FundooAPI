@@ -21,17 +21,18 @@ const userController = {
             return res.status(403).send(err);
         }))
     },
-    forgetUser: async (req, res) => {
-        await userService.forgetService(req.body).then((result) => {
+    forgetPasswordUser: async (req, res) => {
+        await userService.forgetPasswordService(req.body).then((result) => {
 
             res.status(200).json(result)
         }).catch((err => {
-            logger.error("Error in forgetUser", err)
+            logger.error("Error in forgetPasswordUser", err)
             return res.status(403).send(err);
         }))
     },
-    resetUser: async (req, res) => {
-        await userService.resetService(req.body).then((result) => {
+    resetPasswordUser: async (req, res) => {
+        await userService.resetPasswordService(req.body).then((result) => {
+      
             res.status(200).json(result)
         }).catch((err => {
             logger.error("Error in resetUser", err)

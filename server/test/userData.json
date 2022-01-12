@@ -1,57 +1,115 @@
 {
-    "UserData1":{
+    "UserData1": {
         "firstname": "azdwagg",
-        "lastname": "bbbawrgbb",      
+        "lastname": "bbbawrgbb",
         "email": "poikjhuwef@gmail.com",
         "password": "1234awg"
     },
-    
-    "UserData2":{
+    "UserData2": {
         "firstname": "azdwagg",
-        "lastname": "bbbawrgbb",      
+        "lastname": "bbbawrgbb",
         "email": "poikjhu@gmail",
         "password": "1234awg"
     },
-    "UserData3":{
+    "UserData3": {
         "firstname": "azdwagg",
-        "lastname": "bbbawrgbb",      
+        "lastname": "bbbawrgbb",
         "email": "poikjhu@gmail.com",
         "password": "1234awg"
     },
-    "UserData4":{
+    "UserData4": {
         "firstname": "a",
-        "lastname": "bbbawrgbb",      
+        "lastname": "bbbawrgbb",
         "email": "poikjhu@gmail.com",
         "password": "1234awg"
     },
-    "UserData5":{
+    "UserData5": {
         "firstname": "aaefa",
-        "lastname": "b",      
+        "lastname": "b",
         "email": "poikjhu@gmail.com",
         "password": "1234awg"
     },
-    "LoginData1":{
-        "email":"saurav@gmail.com",
-        "password":"1234"
+    "LoginData1": {
+        "email": "saurav@gmail.com",
+        "password": "12345"
     },
-    "LoginData2":{
-        "email":"saurav@gmail.co",
-        "password":"1234"
+    "LoginData2": {
+        "email": "saurav@gmail.co",
+        "password": "1234"
     },
-    "LoginData3":{
-        "email":"saurav@gmail.com",
-        "password":"12345"
+    "LoginData3": {
+        "email": "saurav@gmail.com",
+        "password": "12345dxf"
     },
-    "forgetData1":{
-        "email":"saurav@gmail.com"
+    "forgetData1": {
+        "email": "saurav@gmail.com"
     },
-    "forgetData2":{
-        "email":"saur@gmail.com"
+    "forgetData2": {
+        "email": "saur@gmail.com"
     },
-    "forgetData3":{
-        "email":"saur@gmail.com"
+    "forgetData3": {
+        "email": "saur@gmail.com"
+    },
+    "resetData1": {
+        "password": "12345"
+    },
+    "addNotesData1": {
+        "title": "testing notes",
+        "description": " test",
+        "isPined": "true",
+        "isArchieved": "false",
+        "isDeleted": "false",
+        "color": "#drge"
+    },
+    "addNotesData2": {
+        "title": "",
+        "description": " test",
+        "isPined": "true",
+        "isArchieved": "false",
+        "isDeleted": "false",
+        "color": "#drge"
+    },
+    "addNotesData3": {
+        "title": "awergw",
+        "description": "",
+        "isPined": "true",
+        "isArchieved": "false",
+        "isDeleted": "false",
+        "color": "#drge"
+    },
+    "addNotesData4": {
+        "title": "awergw",
+        "description": "wwrg",
+        "isPined": "",
+        "isArchieved": "false",
+        "isDeleted": "false",
+        "color": "#drge"
+    },
+    "addNotesData5": {
+        "title": "awergw",
+        "description": "wwrg",
+        "isPined": "true",
+        "isArchieved": "",
+        "isDeleted": "false",
+        "color": "#drge"
+    },
+    "addNotesData6": {
+        "title": "awergw",
+        "description": "wwrg",
+        "isPined": "true",
+        "isArchieved": "true",
+        "isDeleted": "",
+        "color": "#drge"
+    },
+    "getNotes": {},
+    "updateNotes": {
+        "title": "checking update note by saurav",
+        "color": "#abcefg",
+        "_id": "61d7f9802639ba6293ccf59d"
+    },
+    "updateNotes2": {
+        "title": "checking update note by saurav",
+        "color": "#abcefg",
+        "_id": "61d7f9802639ba6293ccf59"
     }
-
-
-    
 }
