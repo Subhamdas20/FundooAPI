@@ -34,7 +34,7 @@
         "password": "12345"
     },
     "LoginData2": {
-        "email": "saurav@gmail.co",
+        "email": "saurav@gmail.",
         "password": "1234"
     },
     "LoginData3": {
@@ -45,10 +45,10 @@
         "email": "saurav@gmail.com"
     },
     "forgetData2": {
-        "email": "saur@gmail.com"
+        "email": "sauaSCCSr@gmail.com"
     },
     "forgetData3": {
-        "email": "saur@gmail.com"
+        "email": "sauaefar@gmail"
     },
     "resetData1": {
         "password": "12345"

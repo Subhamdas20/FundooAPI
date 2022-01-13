@@ -26,7 +26,7 @@ let userValidate = {
 
         let error = req.validationErrors();
         if (error) {
-            return res.status(403).send(error);
+            return res.status(404).send(error);
         } else {
             next();
         }
@@ -42,7 +42,7 @@ let userValidate = {
 
         let error = req.validationErrors();
         if (error) {
-            return res.status(403).send(error);
+            return res.status(404).send(error);
         } else {
             next();
         }
@@ -52,7 +52,7 @@ let userValidate = {
         
         let error = req.validationErrors();
         if (error) {
-            return res.status(403).send(error);
+            return res.status(404).send(error);
         } else {
             next();
         }

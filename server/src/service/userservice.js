@@ -50,7 +50,7 @@ const userService = {
             else {
                 return new Promise((resolve, reject) => {
                     reject({
-                        statusCode: 403,
+                        statusCode: 404,
                         name: "Error",
                         message: "invalid password",
                         code: "LOGIN_FAILED"
@@ -112,8 +112,6 @@ const userService = {
         let userDetails = await userModel.foundUser({ _id: req.data.id });
         if (userDetails.data) {
             const passwordHash = await bcrypt.hash(req.password, 10)
-
-            // let updatedData = newModel.updateOne({ _id: req.data.id }, { password: passwordHash });
             let updatedData = newModel.findByIdAndUpdate(req.data.id, { password: passwordHash }, function (err, docs) {
                 if (err) {
                     logger.info(err)

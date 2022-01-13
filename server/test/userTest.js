@@ -10,7 +10,7 @@ const rawdata = fs.readFileSync('test/userData.json');
 const employeeJSON = JSON.parse(rawdata);
 var jwToken = '';
 
-// Test cases for Registration
+
 describe('registration API', () => {
     it('if valid details sent should save in db', (done) => {
         const userDetails = employeeJSON.UserData1;
@@ -22,7 +22,7 @@ describe('registration API', () => {
                 if (err) {
                     done();
                 }
-                res.should.have.status(200);
+                res.should.have.status(201);
                 done();
             });
     })
@@ -36,7 +36,7 @@ describe('registration API', () => {
                 if (err) {
                     done();
                 }
-                res.should.have.status(403);
+                res.should.have.status(404);
                 res.body[0].should.have.property('msg').equal('Email is not valid')
                 done();
 
@@ -52,7 +52,8 @@ describe('registration API', () => {
                 if (err) {
                     done();
                 }
-                res.should.have.status(200);
+                res.should.have.status(201);
+                res.body.should.have.property('message').equal('user already exists')
                 done();
             });
     }),
@@ -66,7 +67,7 @@ describe('registration API', () => {
                     if (err) {
                         done();
                     }
-                    res.should.have.status(403);
+                    res.should.have.status(404);
                     res.body[0].should.have.property('msg').equal('Min 2 alphabet required in FirstName');
                     done();
                 });
@@ -81,7 +82,7 @@ describe('registration API', () => {
                     if (err) {
                         done();
                     }
-                    res.should.have.status(403);
+                    res.should.have.status(404);
                     res.body[0].should.have.property('msg').equal('Min 2 alphabet required in LastName');
                     done();
                 });
@@ -98,7 +99,7 @@ describe('login API', () => {
                 if (err) {
                     done();
                 }
-                res.should.have.status(200);
+                res.should.have.status(202);
                 res.body.should.have.property('message').equal('Login success');
                 done();
             });
@@ -112,8 +113,8 @@ describe('login API', () => {
                     if (err) {
                         done();
                     }
-                    res.should.have.status(403);
-                    res.body.should.have.property('message').equal('user not found please register first');
+                    res.should.have.status(404);
+                    res.body[0].msg.should.equal('Email is not valid');
                     done();
                 });
         }),
@@ -126,7 +127,7 @@ describe('login API', () => {
                     if (err) {
                         done();
                     }
-                    res.should.have.status(403);
+                    res.should.have.status(404);
                     res.body.should.have.property('message').equal('invalid password');
                     done();
                 });
@@ -147,7 +148,7 @@ describe('forget API', () => {
                 done();
             });
     }),
-        it('if unregistered email sent should not send mail', (done) => {
+        it('if unregistered email recieved should not send mail', (done) => {
             const userDetails = employeeJSON.forgetData2;
             chai.request(server)
                 .post('/forgetpassword')
@@ -156,12 +157,12 @@ describe('forget API', () => {
                     if (err) {
                         done();
                     }
-                    res.should.have.status(403);
+                    
                     res.body.should.have.property('message').equal('user not found please register first');
                     done();
                 });
         })
-    it('if invalid email sent should not send mail', (done) => {
+    it('if invalid email received should not send mail', (done) => {
         const userDetails = employeeJSON.forgetData3;
         chai.request(server)
             .post('/forgetpassword')
@@ -170,7 +171,7 @@ describe('forget API', () => {
                 if (err) {
                     done();
                 }
-                res.should.have.status(403);
+                res.should.have.status(404);
 
                 done();
             });
@@ -185,7 +186,7 @@ describe('resetPassword API', () => {
             .send(employeeJSON.LoginData1)
             .end((_err, res) => {
                 jwToken = res.body.data.token;
-                res.should.have.status(200);
+                res.should.have.status(202);
                 done();
             });
     });
@@ -234,7 +235,7 @@ describe('addNotes API', () => {
             .send(employeeJSON.LoginData1)
             .end((_err, res) => {
                 jwToken = res.body.data.token;
-                res.should.have.status(200);
+                res.should.have.status(202);
                 done();
             });
     });
@@ -251,7 +252,7 @@ describe('addNotes API', () => {
                     console.log(err);
                     done();
                 }
-                res.should.have.status(200);
+                res.should.have.status(202);
                 done();
             });
     })
@@ -391,7 +392,7 @@ describe('getNotes API', () => {
             .send(employeeJSON.LoginData1)
             .end((_err, res) => {
                 jwToken = res.body.data.token;
-                res.should.have.status(200);
+                res.should.have.status(202);
                 done();
             });
     });
@@ -437,7 +438,7 @@ describe('updateNotes API', () => {
             .send(employeeJSON.LoginData1)
             .end((_err, res) => {
                 jwToken = res.body.data.token;
-                res.should.have.status(200);
+                res.should.have.status(202);
                 done();
             });
     });
@@ -496,12 +497,12 @@ describe('isArchieved API', () => {
             .send(employeeJSON.LoginData1)
             .end((_err, res) => {
                 jwToken = res.body.data.token;
-                res.should.have.status(200);
+                res.should.have.status(202);
                 done();
             });
     });
 
-    it('if valid token sent we get status code 200 in isArchievd notes', (done) => {
+    it('if valid token sent we get status code 202 in isArchievd notes', (done) => {
         const noteDetails = "";
         chai.request(server)
             .get('/isArchieved')
@@ -521,6 +522,51 @@ describe('isArchieved API', () => {
         chai.request(server)
             .get('/isArchieved')
             .set({ token: "aesdf.efaeg.aef" })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(401);
+                done();
+            });
+    })
+})
+
+describe('isDeleted API', () => {
+    beforeEach((done) => {
+        chai
+            .request(server)
+            .post('/login')
+            .send(employeeJSON.LoginData1)
+            .end((_err, res) => {
+                jwToken = res.body.data.token;
+                res.should.have.status(202);
+                done();
+            });
+    });
+
+    it('if valid token sent we get status code 200 in isDeleted notes', (done) => {
+        const noteDetails = "";
+        chai.request(server)
+            .get('/isDeleted')
+            .set({ token: jwToken })
+            .send(noteDetails)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err);
+                    done();
+                }
+                res.should.have.status(200);
+                done();
+            });
+    })
+    it('if invalid token sent we get status code 401 in isDeleted notes', (done) => {
+        const noteDetails = "";
+        chai.request(server)
+            .get('/isDeleted')
+            .set({ token: "efa.aef.aef" })
             .send(noteDetails)
             .end((err, res) => {
                 if (err) {

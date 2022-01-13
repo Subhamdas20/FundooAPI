@@ -17,8 +17,8 @@ router.post("/addNote", noteValidate.addNotes,authentication, NotesController.ad
 router.get("/getNote", authentication, NotesController.getNotes);
 router.delete("/deleteNote", authentication, NotesController.deleteNotes);
 router.put('/updateNote', authentication, NotesController.updateNotes)
-router.get("/isArchieved", authentication, NotesController.getNotes);
-router.get("/isDeleted", authentication, NotesController.getNotes);
+router.get("/isArchieved", authentication, NotesController.getisArchievedNotes);
+router.get("/isDeleted", authentication, NotesController.getisDeletedNotes);
 
 module.exports = router;
 

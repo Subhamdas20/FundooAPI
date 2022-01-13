@@ -42,10 +42,8 @@ let noteService = {
         return foundNote
     },
     getisDeletedService: async (req, res) => {
-        let foundNote = await NotesModel.findNotes({ user_ID: req.data.id, isDeleted: true });
-        if (foundNote) {
-            return foundNote
-        };
+        let foundNote = await NotesModel.findNotes({ user_ID: req.data.id, isDeleted: true })
+        return foundNote
     }
 }
 
