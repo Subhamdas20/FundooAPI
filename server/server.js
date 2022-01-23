@@ -7,7 +7,8 @@ let validator = require('express-validator')
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("../server/swagger.json");
 
-const router = require('./src/routes/routes');
+const userrouter = require('./src/routes/user.routes');
+const notesrouter = require('./src/routes/notes.routes');
 const logger = require('./src/config/logger');
 
 const app = express();
@@ -16,7 +17,8 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use(express.json());
 app.use(validator())
-app.use('/',router)
+app.use('/users',userrouter)
+app.use('/',notesrouter)
 
 app.listen(PORT, () => { 
  logger.info(`server running at Port ${PORT}`) })

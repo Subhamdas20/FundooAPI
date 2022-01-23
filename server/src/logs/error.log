@@ -364,3 +364,103 @@
 {"level":"error","message":"Error in update notes","timestamp":"2022-01-13T11:30:51.073Z"}
 {"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-13T11:41:15.946Z"}
 {"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":403,"timestamp":"2022-01-13T11:42:46.979Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-13T11:44:17.414Z"}
+{"level":"error","message":"Error in update notes","timestamp":"2022-01-13T11:44:19.334Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-13T11:48:27.993Z"}
+{"level":"error","message":"Error in update notes","timestamp":"2022-01-13T11:48:30.228Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-20T07:30:41.568Z"}
+{"level":"error","message":"Error in forgetPasswordUser req is not defined","stack":"ReferenceError: req is not defined\n    at nodeMailer (E:\\cfp\\FundooNotes\\server\\src\\middleware\\nodemailer.js:14:13)\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:43:58.319Z"}
+{"level":"error","message":"Error in forgetPasswordUser req is not defined","stack":"ReferenceError: req is not defined\n    at nodeMailer (E:\\cfp\\FundooNotes\\server\\src\\middleware\\nodemailer.js:14:13)\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:45:00.932Z"}
+{"level":"error","message":"Error in forgetPasswordUser req is not defined","stack":"ReferenceError: req is not defined\n    at nodeMailer (E:\\cfp\\FundooNotes\\server\\src\\middleware\\nodemailer.js:13:13)\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:47:31.735Z"}
+{"level":"error","message":"Error in forgetPasswordUser req is not defined","stack":"ReferenceError: req is not defined\n    at nodeMailer (E:\\cfp\\FundooNotes\\server\\src\\middleware\\nodemailer.js:13:13)\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:49:38.682Z"}
+{"level":"error","message":"Error in forgetPasswordUser nodeMailer is not defined","stack":"ReferenceError: nodeMailer is not defined\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:51:39.247Z"}
+{"level":"error","message":"Error in forgetPasswordUser nodeMailer is not defined","stack":"ReferenceError: nodeMailer is not defined\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:51:41.088Z"}
+{"level":"error","message":"Error in forgetPasswordUser nodeMailer is not defined","stack":"ReferenceError: nodeMailer is not defined\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:51:42.118Z"}
+{"level":"error","message":"Error in forgetPasswordUser req is not defined","stack":"ReferenceError: req is not defined\n    at nodeMailer (E:\\cfp\\FundooNotes\\server\\src\\middleware\\nodemailer.js:15:13)\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:54:33.620Z"}
+{"level":"error","message":"Error in forgetPasswordUser nodeMailer is not defined","stack":"ReferenceError: nodeMailer is not defined\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T09:04:59.595Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:39:05.199Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:40:06.467Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:44:29.728Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:49:37.812Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:49:38.104Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:49:38.165Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:49:38.229Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:49:38.292Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:53:43.268Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:57:12.170Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:57:35.023Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:01:55.723Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:03:12.417Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:04:31.534Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:06:09.140Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:06:09.358Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:06:09.416Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:06:09.476Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:06:09.540Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:06:09.599Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.264Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.331Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.392Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.493Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.556Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.617Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.683Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.742Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:19.471Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:19.530Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:19.752Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:19.814Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:19.879Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:19.946Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:20.007Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:11:57.768Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:16:48.511Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:19:19.044Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:19:19.116Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:09.019Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.372Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.439Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.498Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.597Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.657Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.718Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.786Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.848Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:08.988Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:09.048Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:09.264Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:09.323Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:09.391Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:09.457Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:09.520Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:55.595Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:55.671Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:55.781Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:55.843Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:55.902Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:55.972Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:56.033Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:26.682Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:26.760Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:26.876Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:26.939Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:27.001Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:27.070Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:27.133Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:25:17.969Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:25:48.440Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:26:34.609Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:28:24.165Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:33:12.430Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:38:40.714Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:39:07.706Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:39:27.714Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:40:03.544Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:40:46.751Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:46:02.582Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:46:02.645Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:48:07.397Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:48:07.458Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:50:27.094Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:50:27.158Z"}
+{"level":"error","message":"Error in update notes","timestamp":"2022-01-23T06:50:28.239Z"}

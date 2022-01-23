@@ -14,9 +14,8 @@ var jwToken = '';
 describe('registration API', () => {
     it('if valid details sent should save in db', (done) => {
         const userDetails = employeeJSON.UserData1;
-
         chai.request(server)
-            .post('/register')
+            .post('/users/register')
             .send(userDetails)
             .end((err, res) => {
                 if (err) {
@@ -30,7 +29,7 @@ describe('registration API', () => {
         const userDetails = employeeJSON.UserData2;
 
         chai.request(server)
-            .post('/register')
+            .post('/users/register')
             .send(userDetails)
             .end((err, res) => {
                 if (err) {
@@ -44,9 +43,8 @@ describe('registration API', () => {
     })
     it('if already registered email sent should not save in db', (done) => {
         const userDetails = employeeJSON.UserData3;
-
         chai.request(server)
-            .post('/register')
+            .post('/users/register')
             .send(userDetails)
             .end((err, res) => {
                 if (err) {
@@ -61,7 +59,7 @@ describe('registration API', () => {
             const userDetails = employeeJSON.UserData4;
 
             chai.request(server)
-                .post('/register')
+                .post('/users/register')
                 .send(userDetails)
                 .end((err, res) => {
                     if (err) {
@@ -76,7 +74,7 @@ describe('registration API', () => {
             const userDetails = employeeJSON.UserData5;
 
             chai.request(server)
-                .post('/register')
+                .post('/users/register')
                 .send(userDetails)
                 .end((err, res) => {
                     if (err) {
@@ -93,35 +91,36 @@ describe('login API', () => {
     it('if valid details sent should login', (done) => {
         const userDetails = employeeJSON.LoginData1;
         chai.request(server)
-            .post('/login')
+            .post('/users/login')
             .send(userDetails)
             .end((err, res) => {
                 if (err) {
                     done();
                 }
-                res.should.have.status(202);
+                
                 res.body.should.have.property('message').equal('Login success');
+                res.should.have.status(202);
                 done();
             });
     }),
         it('if wrong email send should not login', (done) => {
             const userDetails = employeeJSON.LoginData2;
             chai.request(server)
-                .post('/login')
+                .post('/users/login')
                 .send(userDetails)
                 .end((err, res) => {
                     if (err) {
                         done();
                     }
+                    res.body.should.have.property('message').equal('Email not found! Register First');
                     res.should.have.status(404);
-                    res.body[0].msg.should.equal('Email is not valid');
                     done();
                 });
         }),
         it('if wrong password send should not login', (done) => {
             const userDetails = employeeJSON.LoginData3;
             chai.request(server)
-                .post('/login')
+                .post('/users/login')
                 .send(userDetails)
                 .end((err, res) => {
                     if (err) {
@@ -137,7 +136,7 @@ describe('forget API', () => {
     it('if valid email sent should send mail', (done) => {
         const userDetails = employeeJSON.forgetData1;
         chai.request(server)
-            .post('/forgetpassword')
+            .post('/users/forgetpassword')
             .send(userDetails)
             .end((err, res) => {
                 if (err) {
@@ -151,13 +150,13 @@ describe('forget API', () => {
         it('if unregistered email recieved should not send mail', (done) => {
             const userDetails = employeeJSON.forgetData2;
             chai.request(server)
-                .post('/forgetpassword')
+                .post('/users/forgetpassword')
                 .send(userDetails)
                 .end((err, res) => {
                     if (err) {
                         done();
                     }
-                    
+
                     res.body.should.have.property('message').equal('user not found please register first');
                     done();
                 });
@@ -165,7 +164,7 @@ describe('forget API', () => {
     it('if invalid email received should not send mail', (done) => {
         const userDetails = employeeJSON.forgetData3;
         chai.request(server)
-            .post('/forgetpassword')
+            .post('/users/forgetpassword')
             .send(userDetails)
             .end((err, res) => {
                 if (err) {
@@ -182,7 +181,7 @@ describe('resetPassword API', () => {
     beforeEach((done) => {
         chai
             .request(server)
-            .post('/login')
+            .post('/users/login')
             .send(employeeJSON.LoginData1)
             .end((_err, res) => {
                 jwToken = res.body.data.token;
@@ -195,7 +194,7 @@ describe('resetPassword API', () => {
 
         const userDetails = employeeJSON.resetData1;
         chai.request(server)
-            .post('/resetpassword')
+            .post('/users/resetpassword')
             .set({ token: jwToken })
             .send(userDetails)
             .end((err, res) => {
@@ -213,7 +212,7 @@ describe('resetPassword API', () => {
 
         const userDetails = employeeJSON.resetData1;
         chai.request(server)
-            .post('/resetpassword')
+            .post('/users/resetpassword')
             .set({ token: "esf.esg.gs" })
             .send(userDetails)
             .end((err, res) => {
@@ -229,9 +228,10 @@ describe('resetPassword API', () => {
 })
 describe('addNotes API', () => {
     beforeEach((done) => {
+       
         chai
             .request(server)
-            .post('/login')
+            .post('/users/login')
             .send(employeeJSON.LoginData1)
             .end((_err, res) => {
                 jwToken = res.body.data.token;
@@ -243,8 +243,9 @@ describe('addNotes API', () => {
     it('if valid token sent then notes should be added in db', (done) => {
 
         const noteDetails = employeeJSON.addNotesData1;
+        console.log(jwToken);
         chai.request(server)
-            .post('/addNote')
+            .post('/notes')
             .set({ token: jwToken })
             .send(noteDetails)
             .end((err, res) => {
@@ -259,7 +260,7 @@ describe('addNotes API', () => {
     it('if invalid token then status code should be 401', (done) => {
         const noteDetails = employeeJSON.addNotesData1;
         chai.request(server)
-            .post('/addNote')
+            .post('/notes')
             .set({ token: "eafae.eaf.eag" })
             .send(noteDetails)
             .end((err, res) => {
@@ -276,7 +277,7 @@ describe('addNotes API', () => {
 
         const noteDetails = employeeJSON.addNotesData2;
         chai.request(server)
-            .post('/addNote')
+            .post('/notes')
             .set({ token: jwToken })
             .send(noteDetails)
             .end((err, res) => {
@@ -292,7 +293,7 @@ describe('addNotes API', () => {
 
         const noteDetails = employeeJSON.addNotesData2;
         chai.request(server)
-            .post('/addNote')
+            .post('/notes')
             .set({ token: jwToken })
             .send(noteDetails)
             .end((err, res) => {
@@ -311,7 +312,7 @@ describe('addNotes API', () => {
 
         const noteDetails = employeeJSON.addNotesData3;
         chai.request(server)
-            .post('/addNote')
+            .post('/notes')
             .set({ token: jwToken })
             .send(noteDetails)
             .end((err, res) => {
@@ -330,7 +331,7 @@ describe('addNotes API', () => {
 
         const noteDetails = employeeJSON.addNotesData4;
         chai.request(server)
-            .post('/addNote')
+            .post('/notes')
             .set({ token: jwToken })
             .send(noteDetails)
             .end((err, res) => {
@@ -349,7 +350,7 @@ describe('addNotes API', () => {
 
         const noteDetails = employeeJSON.addNotesData5;
         chai.request(server)
-            .post('/addNote')
+            .post('/notes')
             .set({ token: jwToken })
             .send(noteDetails)
             .end((err, res) => {
@@ -368,7 +369,7 @@ describe('addNotes API', () => {
 
         const noteDetails = employeeJSON.addNotesData6;
         chai.request(server)
-            .post('/addNote')
+            .post('/notes')
             .set({ token: jwToken })
             .send(noteDetails)
             .end((err, res) => {
@@ -388,7 +389,7 @@ describe('getNotes API', () => {
     beforeEach((done) => {
         chai
             .request(server)
-            .post('/login')
+            .post('/users/login')
             .send(employeeJSON.LoginData1)
             .end((_err, res) => {
                 jwToken = res.body.data.token;
@@ -400,7 +401,7 @@ describe('getNotes API', () => {
     it('if valid token sent then get notes should give status code 200', (done) => {
         const noteDetails = employeeJSON.getNotes;
         chai.request(server)
-            .get('/getNote')
+            .get('/notes')
             .set({ token: jwToken })
             .send(noteDetails)
             .end((err, res) => {
@@ -416,7 +417,7 @@ describe('getNotes API', () => {
     it('if invalid valid token sent then getnotes should give status code 401', (done) => {
         const noteDetails = employeeJSON.getNotes;
         chai.request(server)
-            .get('/getNote')
+            .get('/notes')
             .set({ token: "wsegs.aef.aegf" })
             .send(noteDetails)
             .end((err, res) => {
@@ -434,7 +435,7 @@ describe('updateNotes API', () => {
     beforeEach((done) => {
         chai
             .request(server)
-            .post('/login')
+            .post('/users/login')
             .send(employeeJSON.LoginData1)
             .end((_err, res) => {
                 jwToken = res.body.data.token;
@@ -446,7 +447,7 @@ describe('updateNotes API', () => {
     it('if valid token sent then notes should be updated', (done) => {
         const noteDetails = employeeJSON.updateNotes;
         chai.request(server)
-            .put('/updateNote')
+            .put('/notes')
             .set({ token: jwToken })
             .send(noteDetails)
             .end((err, res) => {
@@ -461,7 +462,7 @@ describe('updateNotes API', () => {
     it('if invalid  token sent then notes should not be updated', (done) => {
         const noteDetails = employeeJSON.updateNotes;
         chai.request(server)
-            .put('/updateNote')
+            .put('/notes')
             .set({ token: "aef.aef.eaf" })
             .send(noteDetails)
             .end((err, res) => {
@@ -476,7 +477,7 @@ describe('updateNotes API', () => {
     it('if valid  token sent and invalid _ID sent then notes should not be updated', (done) => {
         const noteDetails = employeeJSON.updateNotes2;
         chai.request(server)
-            .put('/updateNote')
+            .put('/notes')
             .set({ token: jwToken })
             .send(noteDetails)
             .end((err, res) => {
@@ -493,7 +494,7 @@ describe('isArchieved API', () => {
     beforeEach((done) => {
         chai
             .request(server)
-            .post('/login')
+            .post('/users/login')
             .send(employeeJSON.LoginData1)
             .end((_err, res) => {
                 jwToken = res.body.data.token;
@@ -505,7 +506,7 @@ describe('isArchieved API', () => {
     it('if valid token sent we get status code 202 in isArchievd notes', (done) => {
         const noteDetails = "";
         chai.request(server)
-            .get('/isArchieved')
+            .get('/notes/isArchieved')
             .set({ token: jwToken })
             .send(noteDetails)
             .end((err, res) => {
@@ -520,7 +521,7 @@ describe('isArchieved API', () => {
     it('if invalid token sent we get status code 401 in isArchievd notes', (done) => {
         const noteDetails = "";
         chai.request(server)
-            .get('/isArchieved')
+            .get('/notes/isArchieved')
             .set({ token: "aesdf.efaeg.aef" })
             .send(noteDetails)
             .end((err, res) => {
@@ -538,7 +539,7 @@ describe('isDeleted API', () => {
     beforeEach((done) => {
         chai
             .request(server)
-            .post('/login')
+            .post('/users/login')
             .send(employeeJSON.LoginData1)
             .end((_err, res) => {
                 jwToken = res.body.data.token;
@@ -550,7 +551,7 @@ describe('isDeleted API', () => {
     it('if valid token sent we get status code 200 in isDeleted notes', (done) => {
         const noteDetails = "";
         chai.request(server)
-            .get('/isDeleted')
+            .get('/notes/isDeleted')
             .set({ token: jwToken })
             .send(noteDetails)
             .end((err, res) => {
@@ -565,7 +566,7 @@ describe('isDeleted API', () => {
     it('if invalid token sent we get status code 401 in isDeleted notes', (done) => {
         const noteDetails = "";
         chai.request(server)
-            .get('/isDeleted')
+            .get('/notes/isDeleted')
             .set({ token: "efa.aef.aef" })
             .send(noteDetails)
             .end((err, res) => {

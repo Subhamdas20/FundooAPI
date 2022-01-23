@@ -1210,3 +1210,734 @@
 {"level":"info","message":"Connected to the database.","timestamp":"2022-01-13T11:44:07.443Z"}
 {"level":"info","message":"server running at Port 4000","timestamp":"2022-01-13T11:44:09.834Z"}
 {"level":"info","message":"Connected to the database.","timestamp":"2022-01-13T11:44:10.369Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-13T11:44:16.420Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-13T11:44:16.897Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:17.316Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-13T11:44:17.415Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-13T11:44:17.463Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-13T11:44:17.510Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:17.608Z"}
+{"data":"","level":"info","message":"Password Updated","status":200,"success":"true","timestamp":"2022-01-13T11:44:17.707Z"}
+{"level":"info","message":"Reset password sucessful","timestamp":"2022-01-13T11:44:17.707Z"}
+{"level":"info","message":"reset successful","timestamp":"2022-01-13T11:44:17.762Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:17.806Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:17.906Z"}
+{"level":"info","message":"Notes added successfully","timestamp":"2022-01-13T11:44:17.961Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:18.061Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:18.161Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:18.262Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:18.362Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:18.462Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:18.567Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:18.670Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:18.774Z"}
+{"level":"info","message":"Get notes successful","timestamp":"2022-01-13T11:44:18.830Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:18.931Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:19.033Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:19.225Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:19.330Z"}
+{"level":"error","message":"Error in update notes","timestamp":"2022-01-13T11:44:19.334Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:19.430Z"}
+{"level":"info","message":"Get isArchieved successful","timestamp":"2022-01-13T11:44:19.473Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:19.571Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:19.669Z"}
+{"level":"info","message":"get isDeleted successful","timestamp":"2022-01-13T11:44:19.710Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:44:19.804Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-13T11:44:20.289Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-13T11:46:04.298Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-13T11:46:15.071Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-13T11:46:31.095Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-13T11:46:31.532Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-13T11:47:45.494Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-13T11:47:46.054Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-13T11:48:27.027Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-13T11:48:27.476Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:27.890Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-13T11:48:27.993Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-13T11:48:28.042Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-13T11:48:28.087Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:28.189Z"}
+{"data":"","level":"info","message":"Password Updated","status":200,"success":"true","timestamp":"2022-01-13T11:48:28.399Z"}
+{"level":"info","message":"Reset password sucessful","timestamp":"2022-01-13T11:48:28.399Z"}
+{"level":"info","message":"reset successful","timestamp":"2022-01-13T11:48:28.594Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:28.672Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:28.829Z"}
+{"level":"info","message":"Notes added successfully","timestamp":"2022-01-13T11:48:28.881Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:28.979Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:29.078Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:29.176Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:29.284Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:29.391Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:29.490Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:29.586Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:29.685Z"}
+{"level":"info","message":"Get notes successful","timestamp":"2022-01-13T11:48:29.733Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:29.834Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:29.939Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:30.123Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:30.223Z"}
+{"level":"error","message":"Error in update notes","timestamp":"2022-01-13T11:48:30.228Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:30.324Z"}
+{"level":"info","message":"Get isArchieved successful","timestamp":"2022-01-13T11:48:30.371Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:30.468Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:30.567Z"}
+{"level":"info","message":"get isDeleted successful","timestamp":"2022-01-13T11:48:30.608Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-13T11:48:30.704Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-13T11:48:30.869Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:00:39.714Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:00:40.541Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:34:07.252Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:34:07.951Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-17T14:34:11.385Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-17T14:34:29.880Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-17T14:34:41.645Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:38:16.483Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:38:17.159Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:38:18.442Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:38:18.868Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-17T14:40:34.136Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:42:42.523Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:42:43.054Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:45:46.283Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:45:46.958Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-17T14:48:27.139Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-17T14:48:36.447Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-17T14:48:44.642Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-17T14:48:47.885Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:50:10.387Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:50:11.105Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:50:14.788Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:50:15.376Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:50:39.603Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:50:40.073Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:50:41.619Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:50:42.498Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:50:47.799Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:50:48.461Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:50:49.455Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:50:49.887Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:50:51.165Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:50:52.827Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:50:53.334Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:50:56.028Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:50:56.553Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-17T14:50:59.908Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-17T14:51:01.828Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:29:08.758Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:29:09.594Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:29:30.255Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:29:31.071Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-20T07:30:41.568Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-20T07:32:26.596Z"}
+{"level":"info","message":"Notes added successfully","timestamp":"2022-01-20T07:33:13.143Z"}
+{"level":"info","message":"Notes added successfully","timestamp":"2022-01-20T07:33:14.268Z"}
+{"level":"info","message":"Get notes successful","timestamp":"2022-01-20T07:34:05.407Z"}
+{"data":"","level":"info","message":"Password Updated","status":200,"success":"true","timestamp":"2022-01-20T07:35:05.868Z"}
+{"level":"info","message":"Reset password sucessful","timestamp":"2022-01-20T07:35:05.869Z"}
+{"level":"info","message":"reset successful","timestamp":"2022-01-20T07:35:05.917Z"}
+{"data":"","level":"info","message":"Password Updated","status":200,"success":"true","timestamp":"2022-01-20T07:35:48.127Z"}
+{"level":"info","message":"Reset password sucessful","timestamp":"2022-01-20T07:35:48.127Z"}
+{"level":"info","message":"reset successful","timestamp":"2022-01-20T07:35:48.184Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTkwZmUwNWViYzY4ZDBjM2VlOTBjYiIsImVtYWlsIjoic3ViaEBnbWFpbC5jb20iLCJpYXQiOjE2NDI2NjQxOTcsImV4cCI6MTY0Mjc1MDU5N30.sVxnOgDvwKeNOwMxw9MJqBEvsZRH37gDTIi9-lm3ob4","timestamp":"2022-01-20T07:36:37.655Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-20T07:36:37.670Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-20T07:36:41.023Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:39:57.809Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:39:58.656Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:40:32.686Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:40:33.147Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:40:37.231Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:40:37.675Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:40:39.649Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:40:40.174Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:40:41.915Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:40:42.505Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:40:54.324Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:40:54.776Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:03.848Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:04.565Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:09.234Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:09.686Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:10.846Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:11.288Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:13.170Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:13.626Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:19.092Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:19.595Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:29.962Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:30.402Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:34.975Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:35.428Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:37.559Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:38.005Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:45.180Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:45.619Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:47.576Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:48.045Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:50.627Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:51.133Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:52.680Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:53.134Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:54.227Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:54.672Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:41:57.568Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:41:58.220Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:42:01.581Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:42:02.238Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:42:03.239Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:42:03.699Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:42:27.023Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:42:27.553Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:42:30.835Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:42:31.378Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:42:33.294Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:42:34.259Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:42:35.415Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:42:35.984Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:42:38.176Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:42:38.689Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:42:49.528Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:42:49.992Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:42:53.056Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:42:53.508Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:43:05.058Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:43:05.602Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:43:23.247Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:43:23.717Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:43:36.654Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:43:37.219Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:43:44.742Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:43:45.694Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:43:46.169Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:43:48.764Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:43:49.233Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTkwZmUwNWViYzY4ZDBjM2VlOTBjYiIsImVtYWlsIjoic3ViaEBnbWFpbC5jb20iLCJpYXQiOjE2NDI2NjQ2MzgsImV4cCI6MTY0Mjc1MTAzOH0.xjaQ6EGYD7MC08Nz9NUIOERrw_z9fH1WiytwVGGNYwU","timestamp":"2022-01-20T07:43:58.314Z"}
+{"level":"error","message":"Error in forgetPasswordUser req is not defined","stack":"ReferenceError: req is not defined\n    at nodeMailer (E:\\cfp\\FundooNotes\\server\\src\\middleware\\nodemailer.js:14:13)\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:43:58.319Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:44:53.784Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:44:54.424Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTkwZmUwNWViYzY4ZDBjM2VlOTBjYiIsImVtYWlsIjoic3ViaEBnbWFpbC5jb20iLCJpYXQiOjE2NDI2NjQ3MDAsImV4cCI6MTY0Mjc1MTEwMH0.e1Z1LlNN_0jFfsGd4aLX57aDABFwtATHnn-QcdMCX0Y","timestamp":"2022-01-20T07:45:00.929Z"}
+{"level":"error","message":"Error in forgetPasswordUser req is not defined","stack":"ReferenceError: req is not defined\n    at nodeMailer (E:\\cfp\\FundooNotes\\server\\src\\middleware\\nodemailer.js:14:13)\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:45:00.932Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:46:26.485Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:46:27.140Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:46:33.319Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:46:33.839Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:47:30.193Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:47:31.470Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTkwZmUwNWViYzY4ZDBjM2VlOTBjYiIsImVtYWlsIjoic3ViaEBnbWFpbC5jb20iLCJpYXQiOjE2NDI2NjQ4NTEsImV4cCI6MTY0Mjc1MTI1MX0.8nFiKMNOlhfy0A4GULyr4wvnhDhR1hSMpTaiLzdrPxE","timestamp":"2022-01-20T07:47:31.732Z"}
+{"level":"error","message":"Error in forgetPasswordUser req is not defined","stack":"ReferenceError: req is not defined\n    at nodeMailer (E:\\cfp\\FundooNotes\\server\\src\\middleware\\nodemailer.js:13:13)\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:47:31.736Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:49:35.067Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:49:35.817Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTkwZmUwNWViYzY4ZDBjM2VlOTBjYiIsImVtYWlsIjoic3ViaEBnbWFpbC5jb20iLCJpYXQiOjE2NDI2NjQ5NzgsImV4cCI6MTY0Mjc1MTM3OH0.4Zjnu35aX9u17-z0ansEc8jb9oi1FMGas1Kxjj3RgZc","timestamp":"2022-01-20T07:49:38.678Z"}
+{"level":"error","message":"Error in forgetPasswordUser req is not defined","stack":"ReferenceError: req is not defined\n    at nodeMailer (E:\\cfp\\FundooNotes\\server\\src\\middleware\\nodemailer.js:13:13)\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:49:38.682Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:50:57.789Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:50:58.645Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:51:02.693Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:51:03.150Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:51:28.766Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:51:29.214Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:51:35.816Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:51:36.281Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:51:37.890Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:51:38.848Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTkwZmUwNWViYzY4ZDBjM2VlOTBjYiIsImVtYWlsIjoic3ViaEBnbWFpbC5jb20iLCJpYXQiOjE2NDI2NjUwOTksImV4cCI6MTY0Mjc1MTQ5OX0.lz08fjPlagFszXfXc3EWaElY8nYj123_ym_d9HnbYMw","timestamp":"2022-01-20T07:51:39.246Z"}
+{"level":"error","message":"Error in forgetPasswordUser nodeMailer is not defined","stack":"ReferenceError: nodeMailer is not defined\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:51:39.247Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTkwZmUwNWViYzY4ZDBjM2VlOTBjYiIsImVtYWlsIjoic3ViaEBnbWFpbC5jb20iLCJpYXQiOjE2NDI2NjUxMDEsImV4cCI6MTY0Mjc1MTUwMX0.nXMELYw-SpHC-IoKYJHRHG7O-nsKB-p9LrX6oGpDBD4","timestamp":"2022-01-20T07:51:41.088Z"}
+{"level":"error","message":"Error in forgetPasswordUser nodeMailer is not defined","stack":"ReferenceError: nodeMailer is not defined\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:51:41.089Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTkwZmUwNWViYzY4ZDBjM2VlOTBjYiIsImVtYWlsIjoic3ViaEBnbWFpbC5jb20iLCJpYXQiOjE2NDI2NjUxMDIsImV4cCI6MTY0Mjc1MTUwMn0.GFICfzBF_v_XWvSvrPHJiY7Vg0jFwzWcUos0Lynoi0M","timestamp":"2022-01-20T07:51:42.117Z"}
+{"level":"error","message":"Error in forgetPasswordUser nodeMailer is not defined","stack":"ReferenceError: nodeMailer is not defined\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:51:42.118Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:52:19.522Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:52:20.280Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTkwZmUwNWViYzY4ZDBjM2VlOTBjYiIsImVtYWlsIjoic3ViaEBnbWFpbC5jb20iLCJpYXQiOjE2NDI2NjUxNDUsImV4cCI6MTY0Mjc1MTU0NX0.Gc7qYe1eJmXXmAzHxMEy3OC6woCejmG41ziPiYzjnDE","timestamp":"2022-01-20T07:52:25.462Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-20T07:52:25.473Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-20T07:52:29.492Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:53:59.790Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:54:00.407Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:54:01.381Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:54:01.868Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:54:08.416Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:54:08.884Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:54:16.028Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:54:16.482Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:54:17.981Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:54:18.577Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:54:23.761Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:54:24.223Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T07:54:31.980Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T07:54:32.717Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTkwZmUwNWViYzY4ZDBjM2VlOTBjYiIsImVtYWlsIjoic3ViaEBnbWFpbC5jb20iLCJpYXQiOjE2NDI2NjUyNzMsImV4cCI6MTY0Mjc1MTY3M30.kqALK25UhpovwoEzphNCUrx4kvVUcltDAOW1FasRUtw","timestamp":"2022-01-20T07:54:33.615Z"}
+{"level":"error","message":"Error in forgetPasswordUser req is not defined","stack":"ReferenceError: req is not defined\n    at nodeMailer (E:\\cfp\\FundooNotes\\server\\src\\middleware\\nodemailer.js:15:13)\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T07:54:33.621Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T09:04:58.266Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T09:04:59.003Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTkwZmUwNWViYzY4ZDBjM2VlOTBjYiIsImVtYWlsIjoic3ViaEBnbWFpbC5jb20iLCJpYXQiOjE2NDI2Njk0OTksImV4cCI6MTY0Mjc1NTg5OX0.HsyLG9gkUtCUQBpu_DZZ7zFbw5o87kH0yNUJGqF1vKU","timestamp":"2022-01-20T09:04:59.593Z"}
+{"level":"error","message":"Error in forgetPasswordUser nodeMailer is not defined","stack":"ReferenceError: nodeMailer is not defined\n    at Object.forgetPasswordService (E:\\cfp\\FundooNotes\\server\\src\\service\\userService.js:71:13)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async forgetPasswordUser (E:\\cfp\\FundooNotes\\server\\src\\controller\\usercontroller.js:24:9)","timestamp":"2022-01-20T09:04:59.595Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T09:05:58.572Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T09:06:00.340Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTkwZmUwNWViYzY4ZDBjM2VlOTBjYiIsImVtYWlsIjoic3ViaEBnbWFpbC5jb20iLCJpYXQiOjE2NDI2Njk1OTYsImV4cCI6MTY0Mjc1NTk5Nn0.0STTge-OczmUFXm1mXrDlXPHymeiVEtMvvqtJ9Ovq-Q","timestamp":"2022-01-20T09:06:36.667Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-20T09:06:36.683Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-20T09:06:40.024Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:53:46.841Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:53:48.445Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:53:50.305Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:53:51.994Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:53:53.483Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:53:55.319Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:53:57.198Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T10:53:59.180Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:54:22.033Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:54:24.921Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:54:26.759Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:54:34.140Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:54:36.011Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:54:37.471Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:54:40.199Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T10:54:41.263Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:54:42.517Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T10:54:44.461Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T10:55:38.315Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T11:57:08.101Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T11:57:08.128Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-20T11:58:27.717Z"}
+{"level":"info","message":"Notes added successfully","timestamp":"2022-01-20T11:58:56.215Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-20T14:39:17.858Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-20T14:39:17.873Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T04:58:05.614Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T04:58:05.772Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:18:14.354Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:18:14.376Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:20:00.248Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:20:00.272Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:20:01.652Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:20:01.669Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:20:05.278Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:20:05.296Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:20:06.439Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:20:06.475Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T05:20:13.603Z"}
+{"level":"info","message":"get isDeleted successful","timestamp":"2022-01-23T05:20:41.642Z"}
+{"level":"info","message":"get isDeleted successful","timestamp":"2022-01-23T05:25:16.992Z"}
+{"level":"info","message":"Get isArchieved successful","timestamp":"2022-01-23T05:25:59.810Z"}
+{"level":"info","message":"Get isArchieved successful","timestamp":"2022-01-23T05:26:25.653Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:26:53.613Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:26:53.633Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:27:21.043Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:27:21.065Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:27:29.173Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:27:29.198Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:28:31.451Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:28:31.476Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:29:24.067Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:29:24.085Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:30:29.832Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:30:29.855Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:31:39.749Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:31:39.768Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:33:48.479Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:33:48.502Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:35:22.132Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:35:22.155Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:37:48.364Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:37:48.384Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T05:37:48.432Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:39:05.002Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:39:05.019Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:39:05.200Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:40:06.350Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:40:06.378Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:40:06.467Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:41:08.580Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:41:08.611Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T05:41:08.725Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:44:29.489Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:44:29.514Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T05:44:29.662Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:44:29.728Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWNlOWY5MTUwMmFmYmI2MzkwNzk1ZiIsImVtYWlsIjoic2F1cmF2QGdtYWlsLmNvbSIsImlhdCI6MTY0MjkxNjY2OSwiZXhwIjoxNjQzMDAzMDY5fQ.YM1tf1mA7NdcCBS8Rdd-WZrYxdWvps8QOBCrcI1pYaM","timestamp":"2022-01-23T05:44:29.736Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T05:44:29.757Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T05:44:29.790Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-23T05:44:32.868Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:49:37.596Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:49:37.613Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T05:49:37.747Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:49:37.812Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWNlOWY5MTUwMmFmYmI2MzkwNzk1ZiIsImVtYWlsIjoic2F1cmF2QGdtYWlsLmNvbSIsImlhdCI6MTY0MjkxNjk3NywiZXhwIjoxNjQzMDAzMzc3fQ.H-39Me9FozF_Bx5LZF2ErOyV3GCT91FwVfLvlr2o6Oc","timestamp":"2022-01-23T05:49:37.821Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T05:49:37.826Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T05:49:37.843Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T05:49:37.906Z"}
+{"data":"","level":"info","message":"Password Updated","status":200,"success":"true","timestamp":"2022-01-23T05:49:37.965Z"}
+{"level":"info","message":"Reset password sucessful","timestamp":"2022-01-23T05:49:37.966Z"}
+{"level":"info","message":"reset successful","timestamp":"2022-01-23T05:49:37.990Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T05:49:38.037Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:49:38.104Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:49:38.165Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:49:38.229Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:49:38.292Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-23T05:49:40.649Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:53:43.151Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:53:43.177Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:53:43.268Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:57:12.062Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:57:12.080Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:57:12.170Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T05:57:34.912Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T05:57:34.937Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T05:57:35.023Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:01:55.624Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:01:55.638Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:01:55.723Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:03:12.308Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:03:12.351Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:03:12.417Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:04:31.405Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:04:31.422Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:04:31.535Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:05:45.517Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:05:45.539Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:05:45.650Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:06:08.914Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:06:08.930Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:06:09.070Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:06:09.140Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWNlOWY5MTUwMmFmYmI2MzkwNzk1ZiIsImVtYWlsIjoic2F1cmF2QGdtYWlsLmNvbSIsImlhdCI6MTY0MjkxNzk2OSwiZXhwIjoxNjQzMDA0MzY5fQ.tSZnQLCnIvsIrQx68bLyiWECcyi5F5yBmDIc_r2bx0g","timestamp":"2022-01-23T06:06:09.150Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:06:09.156Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:06:09.172Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:06:09.236Z"}
+{"data":"","level":"info","message":"Password Updated","status":200,"success":"true","timestamp":"2022-01-23T06:06:09.296Z"}
+{"level":"info","message":"Reset password sucessful","timestamp":"2022-01-23T06:06:09.296Z"}
+{"level":"info","message":"reset successful","timestamp":"2022-01-23T06:06:09.303Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:06:09.358Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:06:09.416Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:06:09.476Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:06:09.540Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:06:09.599Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-23T06:06:12.013Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:07:21.111Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:07:21.127Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.264Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.331Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.392Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWNlOWY5MTUwMmFmYmI2MzkwNzk1ZiIsImVtYWlsIjoic2F1cmF2QGdtYWlsLmNvbSIsImlhdCI6MTY0MjkxODA0MSwiZXhwIjoxNjQzMDA0NDQxfQ.FOdPIG5LrcketTd86r-5DOGYT-shLUGS-2teiAVbriM","timestamp":"2022-01-23T06:07:21.400Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:07:21.405Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:07:21.422Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.493Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.556Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.617Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.683Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:07:21.743Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-23T06:07:24.236Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:08:02.042Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:08:02.060Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:08:27.887Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:08:27.906Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:09:27.488Z"}
+{"level":"info","message":"Notes added successfully","timestamp":"2022-01-23T06:09:53.617Z"}
+{"level":"info","message":"Notes added successfully","timestamp":"2022-01-23T06:09:59.369Z"}
+{"level":"info","message":"Notes added successfully","timestamp":"2022-01-23T06:10:10.341Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:10:19.254Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:10:19.279Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:10:19.410Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:19.471Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:19.530Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWNlOWY5MTUwMmFmYmI2MzkwNzk1ZiIsImVtYWlsIjoic2F1cmF2QGdtYWlsLmNvbSIsImlhdCI6MTY0MjkxODIxOSwiZXhwIjoxNjQzMDA0NjE5fQ.MaGdxIXW-751TT9AG8obmkWyXyofYf6KNOVIYBQBwTE","timestamp":"2022-01-23T06:10:19.538Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:10:19.544Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:10:19.552Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:10:19.621Z"}
+{"data":"","level":"info","message":"Password Updated","status":200,"success":"true","timestamp":"2022-01-23T06:10:19.684Z"}
+{"level":"info","message":"Reset password sucessful","timestamp":"2022-01-23T06:10:19.685Z"}
+{"level":"info","message":"reset successful","timestamp":"2022-01-23T06:10:19.693Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:19.752Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:19.814Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:19.879Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:19.946Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:10:20.007Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-23T06:10:23.071Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:11:57.661Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:11:57.683Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:11:57.768Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:16:48.390Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:16:48.414Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:16:48.511Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:19:18.925Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:19:18.944Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:19:19.045Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:19:19.116Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:20:08.903Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:20:08.919Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:09.019Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:20:55.220Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:20:55.245Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.372Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.439Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.498Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWNlOWY5MTUwMmFmYmI2MzkwNzk1ZiIsImVtYWlsIjoic2F1cmF2QGdtYWlsLmNvbSIsImlhdCI6MTY0MjkxODg1NSwiZXhwIjoxNjQzMDA1MjU1fQ.pmzfdrF_lrT9xsm3Cytwufjd3qsfW5yhBbwaw9bElCs","timestamp":"2022-01-23T06:20:55.508Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:20:55.514Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:20:55.522Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.597Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.657Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.719Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.786Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:20:55.848Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-23T06:20:58.200Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:23:08.716Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:23:08.733Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:23:08.927Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:08.988Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:09.048Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWNlOWY5MTUwMmFmYmI2MzkwNzk1ZiIsImVtYWlsIjoic2F1cmF2QGdtYWlsLmNvbSIsImlhdCI6MTY0MjkxODk4OSwiZXhwIjoxNjQzMDA1Mzg5fQ.zSn1SSEg2w61wE8BAH44lJgIfeygyw5qyHPuyUjOqVQ","timestamp":"2022-01-23T06:23:09.056Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:23:09.063Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:23:09.071Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:23:09.139Z"}
+{"data":"","level":"info","message":"Password Updated","status":200,"success":"true","timestamp":"2022-01-23T06:23:09.198Z"}
+{"level":"info","message":"Reset password sucessful","timestamp":"2022-01-23T06:23:09.198Z"}
+{"level":"info","message":"reset successful","timestamp":"2022-01-23T06:23:09.205Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:09.264Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:09.324Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:09.391Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:09.457Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:09.520Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-23T06:23:35.514Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:23:55.445Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:23:55.468Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:55.595Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:23:55.608Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:55.671Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWNlOWY5MTUwMmFmYmI2MzkwNzk1ZiIsImVtYWlsIjoic2F1cmF2QGdtYWlsLmNvbSIsImlhdCI6MTY0MjkxOTAzNSwiZXhwIjoxNjQzMDA1NDM1fQ.oBzaJSSY2g4glLulOV7IjwiHqE2_nJ0uEveMTdeMceI","timestamp":"2022-01-23T06:23:55.680Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:23:55.685Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:23:55.703Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:55.781Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:55.843Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:55.902Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:55.973Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:23:56.033Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-23T06:23:58.263Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:24:26.526Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:24:26.543Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:26.682Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:24:26.695Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:26.760Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWNlOWY5MTUwMmFmYmI2MzkwNzk1ZiIsImVtYWlsIjoic2F1cmF2QGdtYWlsLmNvbSIsImlhdCI6MTY0MjkxOTA2NiwiZXhwIjoxNjQzMDA1NDY2fQ.3_dNM8gV6AIGm-gCe4HnaItR9nnqJGlY1TpoHOqEzAY","timestamp":"2022-01-23T06:24:26.770Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:24:26.775Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:24:26.796Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:26.876Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:26.939Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:27.001Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:27.070Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:24:27.133Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-23T06:24:29.620Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:25:17.861Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:25:17.878Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:25:17.969Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:25:48.330Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:25:48.348Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:25:48.440Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:26:20.855Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:26:20.871Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:26:34.609Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:26:43.456Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:26:51.706Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:26:51.725Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:26:56.752Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:26:56.768Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:26:56.863Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:28:09.781Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:28:09.804Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:09.900Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:28:23.935Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:28:23.951Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:24.093Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:24.099Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:28:24.165Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWNlOWY5MTUwMmFmYmI2MzkwNzk1ZiIsImVtYWlsIjoic2F1cmF2QGdtYWlsLmNvbSIsImlhdCI6MTY0MjkxOTMwNCwiZXhwIjoxNjQzMDA1NzA0fQ.UI8Cz2A5KVnrO2IF9QmsbtbLxbSxQ6VLz0b-nigjgXo","timestamp":"2022-01-23T06:28:24.172Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:28:24.178Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:28:24.202Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:24.270Z"}
+{"data":"","level":"info","message":"Password Updated","status":200,"success":"true","timestamp":"2022-01-23T06:28:24.331Z"}
+{"level":"info","message":"Reset password sucessful","timestamp":"2022-01-23T06:28:24.331Z"}
+{"level":"info","message":"reset successful","timestamp":"2022-01-23T06:28:24.338Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:24.396Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:24.466Z"}
+{"level":"info","message":"Notes added successfully","timestamp":"2022-01-23T06:28:24.480Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:24.545Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:24.615Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:24.680Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:24.744Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:24.806Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:24.873Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:24.940Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:25.003Z"}
+{"level":"info","message":"Get notes successful","timestamp":"2022-01-23T06:28:25.010Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:25.073Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:25.141Z"}
+{"level":"info","message":"Get isArchieved successful","timestamp":"2022-01-23T06:28:25.146Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:25.205Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:25.270Z"}
+{"level":"info","message":"get isDeleted successful","timestamp":"2022-01-23T06:28:25.275Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:28:25.337Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-23T06:28:26.900Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:31:06.465Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:31:06.489Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:31:06.531Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:31:23.967Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:31:23.983Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:31:24.029Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:31:37.836Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:31:37.861Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:31:37.908Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:32:34.683Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:32:34.707Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:32:34.743Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:33:12.318Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:33:12.334Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:33:12.430Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:33:42.946Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:33:42.967Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:33:43.001Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:34:08.226Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:34:08.241Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:34:08.282Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:34:31.241Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:34:31.273Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:34:36.763Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:34:50.202Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:37:22.164Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:37:22.182Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:37:23.331Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:37:23.353Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:37:33.895Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:37:33.917Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:37:52.218Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:37:52.238Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:38:00.367Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:38:00.383Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:38:01.704Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:38:01.719Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:38:04.591Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:38:04.611Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:38:07.819Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:38:07.838Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:38:09.142Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:38:09.158Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:38:10.984Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:38:11.003Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:38:14.569Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:38:14.586Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:38:40.644Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:38:40.662Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:38:40.714Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:39:07.641Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:39:07.666Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:39:07.707Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:39:27.655Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:39:27.674Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:39:27.714Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:40:03.483Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:40:03.502Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:40:03.545Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:40:46.697Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:40:46.717Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:40:46.751Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:46:02.353Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:46:02.375Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:02.575Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:46:02.582Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:46:02.646Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWNlOWY5MTUwMmFmYmI2MzkwNzk1ZiIsImVtYWlsIjoic2F1cmF2QGdtYWlsLmNvbSIsImlhdCI6MTY0MjkyMDM2MiwiZXhwIjoxNjQzMDA2NzYyfQ.w-cDok6UCZRpLNDMzjcJ5myYfwJflS1SEWjm1b6nRp0","timestamp":"2022-01-23T06:46:02.655Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:46:02.662Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:46:02.672Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:02.739Z"}
+{"data":"","level":"info","message":"Password Updated","status":200,"success":"true","timestamp":"2022-01-23T06:46:02.800Z"}
+{"level":"info","message":"Reset password sucessful","timestamp":"2022-01-23T06:46:02.801Z"}
+{"level":"info","message":"reset successful","timestamp":"2022-01-23T06:46:02.808Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:02.869Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:02.939Z"}
+{"level":"info","message":"Notes added successfully","timestamp":"2022-01-23T06:46:02.952Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:03.019Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:03.081Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:03.145Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:03.211Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:03.274Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:03.339Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:03.400Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:03.463Z"}
+{"level":"info","message":"Get notes successful","timestamp":"2022-01-23T06:46:03.471Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:03.531Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:03.604Z"}
+{"level":"info","message":"Get isArchieved successful","timestamp":"2022-01-23T06:46:03.610Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:03.675Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:03.740Z"}
+{"level":"info","message":"get isDeleted successful","timestamp":"2022-01-23T06:46:03.745Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:46:03.805Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-23T06:46:05.637Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:48:07.234Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:48:07.256Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:07.390Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:48:07.397Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:48:07.458Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWNlOWY5MTUwMmFmYmI2MzkwNzk1ZiIsImVtYWlsIjoic2F1cmF2QGdtYWlsLmNvbSIsImlhdCI6MTY0MjkyMDQ4NywiZXhwIjoxNjQzMDA2ODg3fQ.-moUnLPFNJ6CVaIPGfDV_AWONPPe1tNoszmeRTCR3ek","timestamp":"2022-01-23T06:48:07.466Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:48:07.472Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:48:07.490Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:07.565Z"}
+{"data":"","level":"info","message":"Password Updated","status":200,"success":"true","timestamp":"2022-01-23T06:48:07.627Z"}
+{"level":"info","message":"Reset password sucessful","timestamp":"2022-01-23T06:48:07.627Z"}
+{"level":"info","message":"reset successful","timestamp":"2022-01-23T06:48:07.635Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:07.700Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:07.768Z"}
+{"level":"info","message":"Notes added successfully","timestamp":"2022-01-23T06:48:07.786Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:07.850Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:07.914Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:07.979Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:08.042Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:08.106Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:08.167Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:08.231Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:08.292Z"}
+{"level":"info","message":"Get notes successful","timestamp":"2022-01-23T06:48:08.298Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:08.357Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:08.424Z"}
+{"level":"info","message":"Get isArchieved successful","timestamp":"2022-01-23T06:48:08.429Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:08.490Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:08.554Z"}
+{"level":"info","message":"get isDeleted successful","timestamp":"2022-01-23T06:48:08.559Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:48:08.619Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-23T06:48:10.247Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:48:28.939Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:48:28.962Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:49:58.977Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:49:58.993Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:50:16.564Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:50:16.581Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:16.681Z"}
+{"level":"info","message":"server running at Port 4000","timestamp":"2022-01-23T06:50:26.929Z"}
+{"level":"info","message":"Connected to the database.","timestamp":"2022-01-23T06:50:26.951Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:27.087Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser Email not found! Register First","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:50:27.095Z"}
+{"code":"LOGIN_FAILED","level":"error","message":"Error in loginUser invalid password","name":"Error","statusCode":404,"timestamp":"2022-01-23T06:50:27.158Z"}
+{"level":"info","message":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWNlOWY5MTUwMmFmYmI2MzkwNzk1ZiIsImVtYWlsIjoic2F1cmF2QGdtYWlsLmNvbSIsImlhdCI6MTY0MjkyMDYyNywiZXhwIjoxNjQzMDA3MDI3fQ.Ohk-trgZPA-qaNFqu01sClOxHk7SHGD81xVV1NDwqu0","timestamp":"2022-01-23T06:50:27.167Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:50:27.173Z"}
+{"level":"info","message":"Email sent","timestamp":"2022-01-23T06:50:27.190Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:27.258Z"}
+{"data":"","level":"info","message":"Password Updated","status":200,"success":"true","timestamp":"2022-01-23T06:50:27.322Z"}
+{"level":"info","message":"Reset password sucessful","timestamp":"2022-01-23T06:50:27.322Z"}
+{"level":"info","message":"reset successful","timestamp":"2022-01-23T06:50:27.338Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:27.386Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:27.456Z"}
+{"level":"info","message":"Notes added successfully","timestamp":"2022-01-23T06:50:27.472Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:27.533Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:27.597Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:27.663Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:27.727Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:27.788Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:27.850Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:27.911Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:27.976Z"}
+{"level":"info","message":"Get notes successful","timestamp":"2022-01-23T06:50:27.982Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:28.040Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:28.104Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:28.169Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:28.234Z"}
+{"level":"error","message":"Error in update notes","timestamp":"2022-01-23T06:50:28.239Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:28.299Z"}
+{"level":"info","message":"Get isArchieved successful","timestamp":"2022-01-23T06:50:28.305Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:28.371Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:28.436Z"}
+{"level":"info","message":"get isDeleted successful","timestamp":"2022-01-23T06:50:28.440Z"}
+{"level":"info","message":"Login success","timestamp":"2022-01-23T06:50:28.503Z"}
+{"level":"info","message":"Email sent successfully","timestamp":"2022-01-23T06:50:29.855Z"}

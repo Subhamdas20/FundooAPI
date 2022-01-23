@@ -2,8 +2,8 @@
     "UserData1": {
         "firstname": "azdwagg",
         "lastname": "bbbawrgbb",
-        "email": "poikjhuwef@gmail.com",
-        "password": "1234awg"
+        "email": "abc@gmail.com",
+        "password": "1234"
     },
     "UserData2": {
         "firstname": "azdwagg",
@@ -30,12 +30,12 @@
         "password": "1234awg"
     },
     "LoginData1": {
-        "email": "saurav@gmail.com",
+        "email": "abc@gmail.com",
         "password": "12345"
     },
     "LoginData2": {
-        "email": "saurav@gmail.",
-        "password": "1234"
+        "email": "pppaaayyy@gmail.com",
+        "password": "1234ewf"
     },
     "LoginData3": {
         "email": "saurav@gmail.com",
@@ -105,7 +105,7 @@
     "updateNotes": {
         "title": "checking update note by saurav",
         "color": "#abcefg",
-        "_id": "61d7f9802639ba6293ccf59d"
+        "_id": "61ecf9aa4ba03d2a930a7969"
     },
     "updateNotes2": {
         "title": "checking update note by saurav",

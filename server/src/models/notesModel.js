@@ -1,14 +1,22 @@
 const mongoose = require('mongoose')
 
 const addNotes = new mongoose.Schema({
-    title: { type: String },
-    description: { type: String },
-    isPined: { type: String },
-    isArchieved: { type: Boolean },
-    isDeleted: { type: Boolean },
-    color: { type: String },
-    user_ID: { type: String },
-    user_Email: { type: String }
+    title: { type: String ,
+        required: true},
+    description: { type: String,
+        required: true },
+    isPined: { type: String ,
+        required: true},
+    isArchieved: { type: Boolean,
+        required: true },
+    isDeleted: { type: Boolean ,
+        required: true},
+    color: { type: String,
+        required: true },
+    user_ID: { type: String ,
+        required: true},
+    user_Email: { type: String ,
+        required: true}
 }, {
     timestamps: true,
 })

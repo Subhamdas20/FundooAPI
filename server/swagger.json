@@ -20,8 +20,8 @@
             "schema": {
               "type": "object",
               "required": [
-                "firstName",
-                "lastName",
+                "firstname",
+                "lastname",
                 "email",
                 "password"
               ],

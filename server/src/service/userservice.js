@@ -4,11 +4,12 @@ const newModel = model.User;
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
 const nodemailer = require('nodemailer');
+// const nodeMailer = require('../middleware/nodemailer.js')
 const logger = require('../config/logger');
 require('dotenv').config();
 
 const userService = {
-    registerService: async (req, res) => {
+    registerService: async (req) => {
         let userDetails = await userModel.foundUser({ email: req.email });
         if (!userDetails.data) {
             const passwordHash = await bcrypt.hash(req.password, 10)
@@ -23,7 +24,7 @@ const userService = {
         }
         else return userDetails;
     },
-    loginService: async (req, res) => {
+    loginService: async (req) => {
         let userDetails = await userModel.foundUser({ email: req.email });
         if (userDetails.data) {
             let passwordVerify = await bcrypt.compare(req.password, userDetails.data.password)
@@ -59,13 +60,25 @@ const userService = {
                 })
             }
         }
-        else return userDetails;
+        else {
+            return new Promise((resolve, reject) => {
+                reject({
+                    statusCode: 404,
+                    name: "Error",
+                    message: "Email not found! Register First",
+                    code: "LOGIN_FAILED"
+                })
+
+            })
+        };
     },
     forgetPasswordService: async (req, res) => {
         let userDetails = await userModel.foundUser({ email: req.email });
         if (userDetails.data) {
             const payload = { id: userDetails.data._id, email: userDetails.data.email }
             const token = jwt.sign(payload, process.env.TOKEN_SECRET, { expiresIn: "1d" })
+            logger.info(token)
+         
             let mailTransporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
@@ -79,7 +92,7 @@ const userService = {
                 subject: 'Forgot password',
                 html: `<div>
                 Hi,
-                Here is the link to reset password <a href="http://localhost:4000/resetpassword">click here</a></div>`
+                Here is the link to reset password  <a href="http://localhost:4000/resetpassword/${token}">click here</a></div>`
             };
 
             mailTransporter.sendMail(mailDetails, function (err, data) {
